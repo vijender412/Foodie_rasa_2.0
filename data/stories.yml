@@ -6,25 +6,27 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
 
-- story: sad path 1
+
+- story: complete path
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - "location": "delhi"
+  - slot_was_set:
+    - "location": "delhi"
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - "cuisine": "chinese"
+  - slot_was_set:
+    - "cuisine": "chinese"
+  - action: action_search_restaurants
+  - slot_was_set:
+    - "location": "delhi"
   - action: utter_goodbye
+
