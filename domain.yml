@@ -1,19 +1,17 @@
-version: "2.0"
-
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - restaurant_search
-
+- goodbye
+- greet
+- restaurant_search
+- affirm
+- deny
 entities:
-  - cuisine
-  - location
-  - price
-  - people
-
-
+- cuisine
+- location
+- people
+- price
 slots:
   cuisine:
     type: text
@@ -21,17 +19,13 @@ slots:
   location:
     type: text
     influence_conversation: false
-
 responses:
   utter_greet:
   - text: Hi there! How may I help you?
-
   utter_did_that_help:
-  - text: "Did that help you?"
-
+  - text: Did that help you?
   utter_goodbye:
-  - text: "Bye"
-
+  - text: Bye
   utter_ask_cuisine:
   - buttons:
     - payload: Chinese
@@ -41,27 +35,21 @@ responses:
     - payload: Italian
       title: Italian
     - payload: American
-      title: American      
+      title: American
     - payload: South Indian
       title: South Indian
     - payload: North Indian
       title: North Indian
     text: what kind of cuisine would you like?
-
   utter_ask_howcanhelp:
   - text: how can I help you?
-
   utter_ask_location:
   - text: In what location?
-
 actions:
-  - action_search_restaurants
-  - utter_ask_cuisine
-  - utter_ask_howcanhelp
-  - utter_ask_location
-  - utter_goodbye
-  - utter_greet
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+- action_search_restaurants
+- utter_ask_cuisine
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_goodbye
+- utter_greet
+version: '2.0'

@@ -26,6 +26,12 @@
 #
 #         return []
 
+# Creating Zomato APi key
+# You'll need to go to this link: https://developers.zomato.com/api
+# you can use your email id or just write upgrad site link
+# log in with your email id/ create a account
+# After logging in click on Generate API key
+
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import unicode_literals
@@ -40,7 +46,7 @@ class ActionSearchRestaurants(Action):
 		return 'action_search_restaurants'
 		
 	def run(self, dispatcher, tracker, domain):
-		config={ "user_key":"f4924dc9ad672ee8c4f8c84743301af5"}
+		config={ "user_key":"af99f4cef4727047ba527df7a2427b0d"}
 		zomato = zomatopy.initialize_app(config)
 		loc = tracker.get_slot('location')
 		cuisine = tracker.get_slot('cuisine')
