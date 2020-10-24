@@ -25,25 +25,9 @@ stories:
     - "cuisine": "chinese"
   - slot_was_set:
     - "cuisine": "chinese"
+  - action: utter_ask_budget
+  - intent: restaurant_search
+  - slot_was_set:
+    - "price": "medium"
   - action: action_search_restaurants
 
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_search
-  - action: utter_ask_location
-  - intent: restaurant_search
-    entities:
-    - location: delhi
-  - slot_was_set:
-    - location: delhi
-  - action: utter_ask_cuisine
-  - intent: restaurant_search
-    entities:
-    - cuisine: American
-  - slot_was_set:
-    - cuisine: American
-  - action: action_search_restaurants
-  - intent: goodbye
-  - action: utter_goodbye

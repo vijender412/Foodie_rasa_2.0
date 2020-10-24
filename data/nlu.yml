@@ -86,16 +86,193 @@ nlu:
     - i want to find out restaurant near me
     - [delhi](location)
     - [American](cuisine)
+    - I want to know [low](price) priced mexican cuisine restaurants
+    - show me [low](price) budget [chinese](cuisine) restaurants in [Agra](location)
+    - show me [medium](price) budget [italian](cuisine) restaurants in [Allahabad](location)
+    - show me [costly](price) [north indian](cuisine) restaurants in [Hyderabad](location)
+    - find [expensive](price) restaurants in [varanasi](location)
+    - find [costly](price) restaurants in [jaipur](location)
+    - find [medium](price) cost [south indian](cuisine) restaurants in [cuttack](location)
+    - [high](price) price
+    - 
+- intent: email_confirmation
+  examples: |
+    - email id : bbc@gmail.com
+    - my email id is abcd@yahoo.com
+    - email id is red@gmail.com
+    - yes. Please send it to ahbcdj@dkj.com
+    - abcde.h75@yahoo.co.in
+    - abcde_h75@yahoo.co.in
+    - jddk.2jmd@kdl.co.in
+    - xyz@sth.edu
+    - abc.def@rediffmail.com
+    - xyz@upgrad.com
+
 - synonym: chinese
   examples: |
     - chines
     - Chinese
+- synonym: chinese
+  examples: |
+    - "mexica"
+    - "taco"
+    - "mex"
+    - "spanish"
+- synonym: American
+  examples: |
+    - american
+    - america  
+
+- synonym: Italian
+  examples: |
+    - italic
+    - italia  
+- synonym: North Indian
+  examples: |
+    - "northindian"
+    - "NorthIndian"
+    - "north food"
+    - "northie"
+    - "punjabi"
+    - "punjab"
+    - "gujarati"
+    - "gujarat"
+    - "bengali"
+    - "bengal"
+    - "kashmiri"
+    - "kashmir"
+
+- synonym: South Indian
+  examples: |
+    - "SouthIndian"
+    - "southindian"
+    - "south food"
+    - "southie"
+    - "andhra"
+    - "telugu"
+    - "kerala"
+    - "karnataka"
+    - "tamil"
+
 - synonym: Delhi
   examples: |
     - New Delhi
+    - newdelhi
+    - deali
+
+- synonym: Bangalore
+  examples: |
+    - bengaluru
+    - blore
+    - blr
+
+- synonym: Mumbai
+  examples: |
+    - bombay
+
+- synonym: Hyderabad
+  examples: |
+    - secunderabad
+    - hydrabad
+
+- synonym: Ahmedabad
+  examples: |
+    - Amdavad
+    - Ahmadabad
+
+- synonym: Chennai
+  examples: |
+    - Madras
+
+- synonym: Pune
+  examples: |
+    - Poona
+
+- synonym: Gurgaon
+  examples: |
+    - Gurugram
+    - Gurgao
+
 - synonym: mid
   examples: |
     - moderate
+
+
 - synonym: '4'
   examples: |
     - four
+
+- synonym: low
+  examples: |
+    - "lower"
+    - "cheap"
+    - "cheaper"
+    - "<300"
+    - "<300 "
+    - inexpensive"
+    - less than 300"
+    - cost under 300"
+    - Lesser than Rs. 300"
+    - Lesser than Rs.300"
+    - lesser than Rs. 300"
+    - lesser than Rs.300"
+    - Lesserthan Rs. 300"
+    - lesserthan Rs. 300"
+    - lesserthan Rs.300"
+    - Lesserthan Rs.300"
+    - Less than Rs. 300"
+    - Less than Rs.300"
+    - less than Rs. 300"
+    - less than Rs.300"
+    - Lessthan Rs. 300"
+    - lessthan Rs. 300"
+    - lessthan Rs.300"
+    - Lessthan Rs.300"
+    - Lesser than 300"
+    - lesser than 300"
+    - Lesserthan 300"
+    - lesserthan 300"
+    - Less than 300"
+    - less than 300"
+    - lessthan 300"
+    - Lessthan 300"
+
+- synonym: medium
+  examples: |
+    - "moderately"
+    - "moderate"
+    - "mid"
+    - "in range of 300 to 700"
+    - "300 to 700"
+    - "300-700"
+    - "Rs. 300 to 700"
+    - "Rs.300 to 700"
+    - "in range of 300 to 700 "
+    - "300 to 700 "
+    - "300-700 "
+    - "Rs. 300 to 700 "
+    - "Rs.300 to 700 "
+
+- synonym: medium
+  examples: |
+    - "expensive"
+    - "costly"
+    - "More than 700"
+    - ">700"
+    - ">700 "
+    - "greater than 700"
+    - "700 or more"
+    - "luxury"
+    - "luxurious"
+    - "More than 700"
+    - "More than Rs.700"
+    - "More than Rs. 700"
+    - "more than 700"
+    - "more than Rs.700"
+    - "more than Rs. 700"
+    - "Morethan 700"
+    - "Morethan Rs.700"
+    - "Morethan Rs. 700"
+    - "morethan 700"
+    - "morethan Rs.700"
+    - "morethan Rs. 700"

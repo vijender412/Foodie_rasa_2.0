@@ -10,7 +10,7 @@ intents:
 entities:
 - cuisine
 - location
-- people
+- email
 - price
 slots:
   cuisine:
@@ -19,11 +19,18 @@ slots:
   location:
     type: text
     influence_conversation: false
+  email:
+    type: text
+    influence_conversation: false
+  emailbody:
+    type: text
+    influence_conversation: false
+  price:
+    type: text
+    influence_conversation: false
 responses:
   utter_greet:
   - text: Hi there! How may I help you?
-  utter_did_that_help:
-  - text: Did that help you?
   utter_goodbye:
   - text: Bye
   utter_ask_cuisine:
@@ -45,11 +52,36 @@ responses:
   - text: how can I help you?
   utter_ask_location:
   - text: In what location?
+  utter_email_conf:
+  - text: Should I send you details of all the restaurants on email?
+  utter_ask_email_id:
+  - text: To what email id should I send it to?
+  utter_email_sent:
+  - text: Sent. Bon Appetit!
+  - text: Sent.
+  utter_ask_budget:
+  - buttons:
+    - payload: low
+      title: Lesser than Rs. 300
+    - payload: medium
+      title: Rs. 300 to 700
+    - payload: high
+      title: More than 700
+    text: "What's the average budget for two people?"
+  utter_no_results_found:
+  - text: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
 actions:
 - action_search_restaurants
+- action_sendemail
+- action_chklocation
 - utter_ask_cuisine
 - utter_ask_howcanhelp
 - utter_ask_location
 - utter_goodbye
 - utter_greet
+- utter_ask_email_id
+- utter_email_sent
+- utter_email_conf
+- utter_ask_budget
+- utter_no_results_found
 version: '2.0'
