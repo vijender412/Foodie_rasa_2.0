@@ -98,8 +98,10 @@ nlu:
     - Im hungry. Looking out for some good restaurants
     - [medium](price)
     - [bengaluru]{"entity": "location", "value": "Bangalore"}
-    - [South Indian](cuisine)
-    - [medium](price)
+    - Can you suggest some good restaurants in [Rishikesh](location)
+    - Okay. Show me some in [Allahabad]{"entity": "location", "value": "Prayagraj"}
+    - Ill prefer [chines]{"entity": "cuisine", "value": "chinese"}
+    - [>700](price)
 - intent: email_confirmation
   examples: |
     - email id : [bbc@gmail.com](email)
@@ -114,22 +116,26 @@ nlu:
     - [xyz@upgrad.com](email)
     - yes. its [vijendersingh412@gmail.com](email)
     - yes. Please send it to [vijendersingh412@gmail.com](email)
+    - yes. Please send it to [xyz@sth.edu](email)
 - synonym: chinese
   examples: |
     - chines
     - Chinese
-    - "mexica"
-    - "taco"
-    - "mex"
-    - "spanish"
+    - mexica
+    - taco
+    - mex
+    - spanish
 - synonym: Delhi
   examples: |
     - New Delhi
     - newdelhi
     - deali
-- synonym: mid
+- synonym: Bangalore
   examples: |
-    - moderate
+    - bengaluru
+    - blore
+    - blr
+
 - synonym: American
   examples: |
     - american
@@ -140,37 +146,35 @@ nlu:
     - italia
 - synonym: North Indian
   examples: |
-    - "northindian"
-    - "NorthIndian"
-    - "north food"
-    - "northie"
-    - "punjabi"
-    - "punjab"
-    - "gujarati"
-    - "gujarat"
-    - "bengali"
-    - "bengal"
-    - "kashmiri"
-    - "kashmir"
+    - northindian
+    - NorthIndian
+    - north food
+    - northie
+    - punjabi
+    - punjab
+    - gujarati
+    - gujarat
+    - bengali
+    - bengal
+    - kashmiri
+    - kashmir
 - synonym: South Indian
   examples: |
-    - "SouthIndian"
-    - "southindian"
-    - "south food"
-    - "southie"
-    - "andhra"
-    - "telugu"
-    - "kerala"
-    - "karnataka"
-    - "tamil"
-- synonym: Bangalore
-  examples: |
-    - bengaluru
-    - blore
-    - blr
+    - SouthIndian
+    - southindian
+    - south food
+    - southie
+    - andhra
+    - telugu
+    - kerala
+    - karnataka
+    - tamil
 - synonym: Mumbai
   examples: |
     - bombay
+- synonym: Prayagraj
+  examples: |
+    - Allahabad
 - synonym: Hyderabad
   examples: |
     - secunderabad
@@ -191,69 +195,71 @@ nlu:
     - Gurgao
 - synonym: low
   examples: |
-    - "lower"
-    - "cheap"
-    - "cheaper"
-    - "<300"
-    - "<300 "
-    - inexpensive"
-    - less than 300"
-    - cost under 300"
-    - Lesser than Rs. 300"
-    - Lesser than Rs.300"
-    - lesser than Rs. 300"
-    - lesser than Rs.300"
-    - Lesserthan Rs. 300"
-    - lesserthan Rs. 300"
-    - lesserthan Rs.300"
-    - Lesserthan Rs.300"
-    - Less than Rs. 300"
-    - Less than Rs.300"
-    - less than Rs. 300"
-    - less than Rs.300"
-    - Lessthan Rs. 300"
-    - lessthan Rs. 300"
-    - lessthan Rs.300"
-    - Lessthan Rs.300"
-    - Lesser than 300"
-    - lesser than 300"
-    - Lesserthan 300"
-    - lesserthan 300"
-    - Less than 300"
-    - lessthan 300"
-    - Lessthan 300"
+    - lower
+    - cheap
+    - cheaper
+    - <300
+    - <300 
+    - inexpensive
+    - less than 300
+    - cost under 300
+    - Lesser than Rs. 300
+    - Lesser than Rs.300
+    - lesser than Rs. 300
+    - lesser than Rs.300
+    - Lesserthan Rs. 300
+    - lesserthan Rs. 300
+    - lesserthan Rs.300
+    - Lesserthan Rs.300
+    - Less than Rs. 300
+    - Less than Rs.300
+    - less than Rs. 300
+    - less than Rs.300
+    - Lessthan Rs. 300
+    - lessthan Rs. 300
+    - lessthan Rs.300
+    - Lessthan Rs.300
+    - Lesser than 300
+    - lesser than 300
+    - Lesserthan 300
+    - lesserthan 300
+    - Less than 300
+    - lessthan 300
+    - Lessthan 300
 - synonym: medium
   examples: |
-    - "moderately"
-    - "moderate"
-    - "mid"
-    - "in range of 300 to 700"
-    - "300 to 700"
-    - "300-700"
-    - "Rs. 300 to 700"
-    - "Rs.300 to 700"
-    - "in range of 300 to 700 "
-    - "300 to 700 "
-    - "300-700 "
-    - "Rs. 300 to 700 "
-    - "Rs.300 to 700 "
-    - "expensive"
-    - "costly"
-    - "More than 700"
-    - ">700"
-    - ">700 "
-    - "greater than 700"
-    - "700 or more"
-    - "luxury"
-    - "luxurious"
-    - "More than Rs.700"
-    - "More than Rs. 700"
-    - "more than 700"
-    - "more than Rs.700"
-    - "more than Rs. 700"
-    - "Morethan 700"
-    - "Morethan Rs.700"
-    - "Morethan Rs. 700"
-    - "morethan 700"
-    - "morethan Rs.700"
-    - "morethan Rs. 700"
+    - moderately
+    - moderate
+    - mid
+    - in range of 300 to 700
+    - 300 to 700
+    - 300-700
+    - Rs. 300 to 700
+    - Rs.300 to 700
+    - in range of 300 to 700 
+    - 300 to 700 
+    - 300-700 
+    - Rs. 300 to 700 
+    - Rs.300 to 700 
+- synonym: high
+  examples: |
+    - expensive
+    - costly
+    - More than 700
+    - >700
+    - >700 
+    - greater than 700
+    - 700 or more
+    - luxury
+    - luxurious
+    - More than Rs.700
+    - More than Rs. 700
+    - more than 700
+    - more than Rs.700
+    - more than Rs. 700
+    - Morethan 700
+    - Morethan Rs.700
+    - Morethan Rs. 700
+    - morethan 700
+    - morethan Rs.700
+    - morethan Rs. 700

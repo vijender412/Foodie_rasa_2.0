@@ -1,0 +1,803 @@
+2020-10-25 17:54:47,814 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id:path>/messages     POST                           add_message
+/conversations/<conversation_id:path>/tracker/events POST                           append_events
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id:path>/execute      POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id:path>/predict      POST                           predict
+/conversations/<conversation_id:path>/tracker/events PUT                            replace_events
+/conversations/<conversation_id:path>/story        GET                            retrieve_story
+/conversations/<conversation_id:path>/tracker      GET                            retrieve_tracker
+/webhooks/slack                                    GET                            slack_webhook.health
+/webhooks/slack/webhook                            GET                            slack_webhook.webhook
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id:path>/trigger_intent POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-10-25 17:54:47,818 [INFO ]  Starting Rasa server on http://localhost:5002
+2020-10-25 17:54:47,820 [DEBUG]  Using the default number of Sanic workers (1).
+2020-10-25 17:54:48,890 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpcnvzd339'.
+2020-10-25 17:54:50,938 [INFO ]  Enabling coroutine debugging. Loop id 2920000448496.
+2020-10-25 17:54:51,470 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpxyicrk18'.
+2020-10-25 17:54:52,301 [DEBUG]  Loading the model ...
+2020-10-25 17:54:52,425 [DEBUG]  Following metrics will be logged during training: 
+2020-10-25 17:54:52,426 [DEBUG]    t_loss (total loss)
+2020-10-25 17:54:52,428 [DEBUG]    i_acc (intent acc)
+2020-10-25 17:54:52,429 [DEBUG]    i_loss (intent loss)
+2020-10-25 17:54:52,430 [DEBUG]    e_f1 (entity f1)
+2020-10-25 17:54:52,431 [DEBUG]    e_loss (entity loss)
+2020-10-25 17:54:54,461 [DEBUG]  Finished loading the model.
+2020-10-25 17:54:54,463 [DEBUG]  Building tensorflow prediction graph...
+2020-10-25 17:54:57,159 [DEBUG]  Finished building tensorflow prediction graph.
+2020-10-25 17:54:57,172 [DEBUG]  Failed to load model for 'ResponseSelector'. Maybe you did not provide enough training data and no model was trained or the path 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpxyicrk18\nlu' doesn't exist?
+2020-10-25 17:54:57,190 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-10-25 17:54:57,191 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-10-25 17:54:57,679 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmp2021iinj'.
+2020-10-25 17:54:57,858 [DEBUG]  Loading the model ...
+2020-10-25 17:54:58,763 [DEBUG]  Finished loading the model.
+2020-10-25 17:54:58,764 [DEBUG]  Building tensorflow prediction graph...
+2020-10-25 17:55:00,398 [DEBUG]  Finished building tensorflow prediction graph.
+2020-10-25 17:55:00,411 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-10-25 17:55:00,412 [INFO ]  Rasa server is up and running.
+2020-10-25 17:59:14,499 [ERROR]  Exception occurred while handling uri: 'http://b8dd292a5483.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 17:59:15,257 [ERROR]  Exception occurred while handling uri: 'http://b8dd292a5483.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:00:15,532 [ERROR]  Exception occurred while handling uri: 'http://b8dd292a5483.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:01:34,729 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:01:38,691 [ERROR]  Exception occurred while handling uri: 'http://b8dd292a5483.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:01:39,468 [ERROR]  Exception occurred while handling uri: 'http://b8dd292a5483.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:02:40,181 [ERROR]  Exception occurred while handling uri: 'http://b8dd292a5483.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:07:47,361 [ERROR]  Exception occurred while handling uri: 'http://b8dd292a5483.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:11:00,823 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id:path>/messages     POST                           add_message
+/conversations/<conversation_id:path>/tracker/events POST                           append_events
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id:path>/execute      POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id:path>/predict      POST                           predict
+/conversations/<conversation_id:path>/tracker/events PUT                            replace_events
+/conversations/<conversation_id:path>/story        GET                            retrieve_story
+/conversations/<conversation_id:path>/tracker      GET                            retrieve_tracker
+/webhooks/slack                                    GET                            slack_webhook.health
+/webhooks/slack/webhook                            GET                            slack_webhook.webhook
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id:path>/trigger_intent POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-10-25 18:11:00,823 [INFO ]  Starting Rasa server on http://localhost:5002
+2020-10-25 18:11:00,823 [DEBUG]  Using the default number of Sanic workers (1).
+2020-10-25 18:11:01,339 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmp3rpbk3vt'.
+2020-10-25 18:11:02,664 [INFO ]  Enabling coroutine debugging. Loop id 2130178213584.
+2020-10-25 18:11:03,176 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmp3ww4v2a8'.
+2020-10-25 18:11:04,120 [DEBUG]  Loading the model ...
+2020-10-25 18:11:04,244 [DEBUG]  Following metrics will be logged during training: 
+2020-10-25 18:11:04,246 [DEBUG]    t_loss (total loss)
+2020-10-25 18:11:04,247 [DEBUG]    i_acc (intent acc)
+2020-10-25 18:11:04,249 [DEBUG]    i_loss (intent loss)
+2020-10-25 18:11:04,250 [DEBUG]    e_f1 (entity f1)
+2020-10-25 18:11:04,251 [DEBUG]    e_loss (entity loss)
+2020-10-25 18:11:06,289 [DEBUG]  Finished loading the model.
+2020-10-25 18:11:06,289 [DEBUG]  Building tensorflow prediction graph...
+2020-10-25 18:11:09,164 [DEBUG]  Finished building tensorflow prediction graph.
+2020-10-25 18:11:09,174 [DEBUG]  Failed to load model for 'ResponseSelector'. Maybe you did not provide enough training data and no model was trained or the path 'C:\Users\VIJEND~1\AppData\Local\Temp\tmp3ww4v2a8\nlu' doesn't exist?
+2020-10-25 18:11:09,192 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-10-25 18:11:09,194 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-10-25 18:11:09,703 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmplsq725an'.
+2020-10-25 18:11:09,855 [DEBUG]  Loading the model ...
+2020-10-25 18:11:10,884 [DEBUG]  Finished loading the model.
+2020-10-25 18:11:10,885 [DEBUG]  Building tensorflow prediction graph...
+2020-10-25 18:11:12,505 [DEBUG]  Finished building tensorflow prediction graph.
+2020-10-25 18:11:12,513 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-10-25 18:11:12,514 [INFO ]  Rasa server is up and running.
+2020-10-25 18:13:06,935 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:13:07,778 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:14:01,462 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id:path>/messages     POST                           add_message
+/conversations/<conversation_id:path>/tracker/events POST                           append_events
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id:path>/execute      POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id:path>/predict      POST                           predict
+/conversations/<conversation_id:path>/tracker/events PUT                            replace_events
+/conversations/<conversation_id:path>/story        GET                            retrieve_story
+/conversations/<conversation_id:path>/tracker      GET                            retrieve_tracker
+/webhooks/slack                                    GET                            slack_webhook.health
+/webhooks/slack/webhook                            POST                           slack_webhook.webhook
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id:path>/trigger_intent POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-10-25 18:14:01,468 [INFO ]  Starting Rasa server on http://localhost:5002
+2020-10-25 18:14:01,469 [DEBUG]  Using the default number of Sanic workers (1).
+2020-10-25 18:14:01,990 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmp80mvwx1a'.
+2020-10-25 18:14:03,537 [INFO ]  Enabling coroutine debugging. Loop id 2244377044976.
+2020-10-25 18:14:04,060 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpu4w3h_22'.
+2020-10-25 18:14:05,035 [DEBUG]  Loading the model ...
+2020-10-25 18:14:05,162 [DEBUG]  Following metrics will be logged during training: 
+2020-10-25 18:14:05,164 [DEBUG]    t_loss (total loss)
+2020-10-25 18:14:05,166 [DEBUG]    i_acc (intent acc)
+2020-10-25 18:14:05,167 [DEBUG]    i_loss (intent loss)
+2020-10-25 18:14:05,169 [DEBUG]    e_f1 (entity f1)
+2020-10-25 18:14:05,170 [DEBUG]    e_loss (entity loss)
+2020-10-25 18:14:07,576 [DEBUG]  Finished loading the model.
+2020-10-25 18:14:07,578 [DEBUG]  Building tensorflow prediction graph...
+2020-10-25 18:14:11,979 [DEBUG]  Finished building tensorflow prediction graph.
+2020-10-25 18:14:11,986 [DEBUG]  Failed to load model for 'ResponseSelector'. Maybe you did not provide enough training data and no model was trained or the path 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpu4w3h_22\nlu' doesn't exist?
+2020-10-25 18:14:12,012 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-10-25 18:14:12,013 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-10-25 18:14:12,691 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpvh81a3fu'.
+2020-10-25 18:14:12,940 [DEBUG]  Loading the model ...
+2020-10-25 18:14:14,283 [DEBUG]  Finished loading the model.
+2020-10-25 18:14:14,285 [DEBUG]  Building tensorflow prediction graph...
+2020-10-25 18:14:16,666 [DEBUG]  Finished building tensorflow prediction graph.
+2020-10-25 18:14:16,680 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-10-25 18:14:16,681 [INFO ]  Rasa server is up and running.
+2020-10-25 18:14:56,840 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:14:57,755 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:16:04,580 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:16:39,015 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:16:42,799 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:16:47,142 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:16:49,804 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:16:50,653 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:17:52,592 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:19:10,433 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:19:47,511 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id:path>/messages     POST                           add_message
+/conversations/<conversation_id:path>/tracker/events POST                           append_events
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id:path>/execute      POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id:path>/predict      POST                           predict
+/conversations/<conversation_id:path>/tracker/events PUT                            replace_events
+/conversations/<conversation_id:path>/story        GET                            retrieve_story
+/conversations/<conversation_id:path>/tracker      GET                            retrieve_tracker
+/webhooks/slack                                    GET                            slack_webhook.health
+/webhooks/slack/webhook                            GET                            slack_webhook.webhook
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id:path>/trigger_intent POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-10-25 18:19:47,514 [INFO ]  Starting Rasa server on http://localhost:5002
+2020-10-25 18:19:47,515 [DEBUG]  Using the default number of Sanic workers (1).
+2020-10-25 18:19:48,032 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpmhbi8mxc'.
+2020-10-25 18:19:49,277 [INFO ]  Enabling coroutine debugging. Loop id 2231244220112.
+2020-10-25 18:19:49,793 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmp7q9wiz14'.
+2020-10-25 18:19:50,577 [DEBUG]  Loading the model ...
+2020-10-25 18:19:50,698 [DEBUG]  Following metrics will be logged during training: 
+2020-10-25 18:19:50,700 [DEBUG]    t_loss (total loss)
+2020-10-25 18:19:50,701 [DEBUG]    i_acc (intent acc)
+2020-10-25 18:19:50,702 [DEBUG]    i_loss (intent loss)
+2020-10-25 18:19:50,703 [DEBUG]    e_f1 (entity f1)
+2020-10-25 18:19:50,704 [DEBUG]    e_loss (entity loss)
+2020-10-25 18:19:52,737 [DEBUG]  Finished loading the model.
+2020-10-25 18:19:52,739 [DEBUG]  Building tensorflow prediction graph...
+2020-10-25 18:19:55,887 [DEBUG]  Finished building tensorflow prediction graph.
+2020-10-25 18:19:55,893 [DEBUG]  Failed to load model for 'ResponseSelector'. Maybe you did not provide enough training data and no model was trained or the path 'C:\Users\VIJEND~1\AppData\Local\Temp\tmp7q9wiz14\nlu' doesn't exist?
+2020-10-25 18:19:55,917 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-10-25 18:19:55,919 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-10-25 18:19:56,600 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpxzxpp09r'.
+2020-10-25 18:19:56,822 [DEBUG]  Loading the model ...
+2020-10-25 18:19:57,913 [DEBUG]  Finished loading the model.
+2020-10-25 18:19:57,915 [DEBUG]  Building tensorflow prediction graph...
+2020-10-25 18:19:59,621 [DEBUG]  Finished building tensorflow prediction graph.
+2020-10-25 18:19:59,638 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-10-25 18:19:59,640 [INFO ]  Rasa server is up and running.
+2020-10-25 18:20:11,649 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:20:13,173 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:20:14,118 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:20:41,580 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id:path>/messages     POST                           add_message
+/conversations/<conversation_id:path>/tracker/events POST                           append_events
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id:path>/execute      POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id:path>/predict      POST                           predict
+/conversations/<conversation_id:path>/tracker/events PUT                            replace_events
+/conversations/<conversation_id:path>/story        GET                            retrieve_story
+/conversations/<conversation_id:path>/tracker      GET                            retrieve_tracker
+/webhooks/slack                                    GET                            slack_webhook.health
+/webhooks/slack/webhook                            GET                            slack_webhook.webhook
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id:path>/trigger_intent POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-10-25 18:20:41,584 [INFO ]  Starting Rasa server on http://localhost:5002
+2020-10-25 18:20:41,586 [DEBUG]  Using the default number of Sanic workers (1).
+2020-10-25 18:20:42,380 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpghzh7dnx'.
+2020-10-25 18:20:44,578 [INFO ]  Enabling coroutine debugging. Loop id 2565735114592.
+2020-10-25 18:20:45,146 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpd8ijgidy'.
+2020-10-25 18:20:46,296 [DEBUG]  Loading the model ...
+2020-10-25 18:20:46,558 [DEBUG]  Following metrics will be logged during training: 
+2020-10-25 18:20:46,560 [DEBUG]    t_loss (total loss)
+2020-10-25 18:20:46,562 [DEBUG]    i_acc (intent acc)
+2020-10-25 18:20:46,565 [DEBUG]    i_loss (intent loss)
+2020-10-25 18:20:46,606 [DEBUG]    e_f1 (entity f1)
+2020-10-25 18:20:46,612 [DEBUG]    e_loss (entity loss)
+2020-10-25 18:20:50,844 [DEBUG]  Finished loading the model.
+2020-10-25 18:20:50,846 [DEBUG]  Building tensorflow prediction graph...
+2020-10-25 18:20:55,109 [DEBUG]  Finished building tensorflow prediction graph.
+2020-10-25 18:20:55,115 [DEBUG]  Failed to load model for 'ResponseSelector'. Maybe you did not provide enough training data and no model was trained or the path 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpd8ijgidy\nlu' doesn't exist?
+2020-10-25 18:20:55,139 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-10-25 18:20:55,141 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-10-25 18:20:55,706 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmp9syfybzf'.
+2020-10-25 18:20:55,927 [DEBUG]  Loading the model ...
+2020-10-25 18:20:57,142 [DEBUG]  Finished loading the model.
+2020-10-25 18:20:57,144 [DEBUG]  Building tensorflow prediction graph...
+2020-10-25 18:20:59,352 [DEBUG]  Finished building tensorflow prediction graph.
+2020-10-25 18:20:59,358 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-10-25 18:20:59,360 [INFO ]  Rasa server is up and running.
+2020-10-25 18:21:05,338 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:21:14,440 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:21:17,268 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:21:18,516 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:21:48,414 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:22:01,170 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:22:18,458 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:22:53,420 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:26:14,423 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:26:43,276 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:26:44,172 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:27:18,652 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:27:46,096 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:31:59,735 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:32:12,985 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:32:13,774 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:32:46,432 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:32:59,377 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:33:07,812 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:33:09,862 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:33:10,719 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:33:14,091 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:34:11,605 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:35:06,018 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:35:06,923 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:35:09,816 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:35:13,142 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:35:42,234 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:36:07,490 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:36:41,154 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:36:44,070 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:36:54,505 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:37:36,104 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:37:36,896 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:37:44,432 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:38:14,414 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:38:37,421 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:39:11,420 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:39:49,722 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id:path>/messages     POST                           add_message
+/conversations/<conversation_id:path>/tracker/events POST                           append_events
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id:path>/execute      POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id:path>/predict      POST                           predict
+/conversations/<conversation_id:path>/tracker/events PUT                            replace_events
+/conversations/<conversation_id:path>/story        GET                            retrieve_story
+/conversations/<conversation_id:path>/tracker      GET                            retrieve_tracker
+/webhooks/slack                                    GET                            slack_webhook.health
+/webhooks/slack/webhook                            GET                            slack_webhook.webhook
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id:path>/trigger_intent POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-10-25 18:39:49,725 [INFO ]  Starting Rasa server on http://localhost:5002
+2020-10-25 18:39:49,727 [DEBUG]  Using the default number of Sanic workers (1).
+2020-10-25 18:39:50,261 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpayg_5zq5'.
+2020-10-25 18:39:51,505 [INFO ]  Enabling coroutine debugging. Loop id 2487146898912.
+2020-10-25 18:39:52,046 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmp_xojyaei'.
+2020-10-25 18:39:53,022 [DEBUG]  Loading the model ...
+2020-10-25 18:39:53,155 [DEBUG]  Following metrics will be logged during training: 
+2020-10-25 18:39:53,157 [DEBUG]    t_loss (total loss)
+2020-10-25 18:39:53,159 [DEBUG]    i_acc (intent acc)
+2020-10-25 18:39:53,160 [DEBUG]    i_loss (intent loss)
+2020-10-25 18:39:53,161 [DEBUG]    e_f1 (entity f1)
+2020-10-25 18:39:53,162 [DEBUG]    e_loss (entity loss)
+2020-10-25 18:39:55,217 [DEBUG]  Finished loading the model.
+2020-10-25 18:39:55,219 [DEBUG]  Building tensorflow prediction graph...
+2020-10-25 18:39:58,273 [DEBUG]  Finished building tensorflow prediction graph.
+2020-10-25 18:39:58,284 [DEBUG]  Failed to load model for 'ResponseSelector'. Maybe you did not provide enough training data and no model was trained or the path 'C:\Users\VIJEND~1\AppData\Local\Temp\tmp_xojyaei\nlu' doesn't exist?
+2020-10-25 18:39:58,301 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-10-25 18:39:58,303 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-10-25 18:39:58,898 [DEBUG]  Extracted model to 'C:\Users\VIJEND~1\AppData\Local\Temp\tmpgjd6cd9m'.
+2020-10-25 18:39:59,074 [DEBUG]  Loading the model ...
+2020-10-25 18:40:00,099 [DEBUG]  Finished loading the model.
+2020-10-25 18:40:00,101 [DEBUG]  Building tensorflow prediction graph...
+2020-10-25 18:40:01,815 [DEBUG]  Finished building tensorflow prediction graph.
+2020-10-25 18:40:01,823 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-10-25 18:40:01,825 [INFO ]  Rasa server is up and running.
+2020-10-25 18:41:07,440 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:42:44,437 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:43:37,445 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:45:26,965 [WARNI]  Received message on unsupported channel: D01DFSU5DD2
+2020-10-25 18:45:38,363 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:45:38,872 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:46:39,402 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:48:08,888 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 18:48:09,373 [ERROR]  Exception occurred while handling uri: 'http://d52e063db299.ngrok.io/webhooks/slack/webhook'
+Traceback (most recent call last):
+  File "c:\programdata\miniconda3\lib\site-packages\sanic\app.py", line 938, in handle_request
+    response = await response
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 421, in webhook
+    text=self._sanitize_user_message(
+  File "c:\programdata\miniconda3\lib\site-packages\rasa\core\channels\slack.py", line 230, in _sanitize_user_message
+    for uid_to_remove in uids_to_remove:
+TypeError: 'NoneType' object is not iterable
+2020-10-25 19:09:02,963 [DEBUG]  Entering: set_webhook
+2020-10-25 19:09:02,965 [DEBUG]  Starting new HTTPS connection (1): api.telegram.org
+2020-10-25 19:11:07,084 [DEBUG]  Entering: set_webhook
+2020-10-25 19:11:07,086 [DEBUG]  Starting new HTTPS connection (1): api.telegram.org
+2020-10-25 19:11:08,722 [DEBUG]  https://api.telegram.org:443 "POST /bot1135204918:AAHLMgds_wffHPgg_cXywpJeju_FJPOkgkc/setWebhook HTTP/1.1" 400 110
+2020-10-25 19:14:14,093 [DEBUG]  Entering: set_webhook
+2020-10-25 19:14:14,096 [DEBUG]  Starting new HTTPS connection (1): api.telegram.org
+2020-10-25 19:14:14,771 [DEBUG]  https://api.telegram.org:443 "POST /bot1135204918:AAHLMgds_wffHPgg_cXywpJeju_FJPOkgkc/setWebhook HTTP/1.1" 400 110
+2020-10-25 19:15:22,534 [DEBUG]  Entering: set_webhook
+2020-10-25 19:15:22,536 [DEBUG]  Starting new HTTPS connection (1): api.telegram.org
+2020-10-25 19:15:23,169 [DEBUG]  https://api.telegram.org:443 "POST /bot1135204918:AAHLMgds_wffHPgg_cXywpJeju_FJPOkgkc/setWebhook HTTP/1.1" 400 127
