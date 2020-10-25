@@ -7,8 +7,7 @@ stories:
   - intent: greet
   - action: utter_greet
 
-
-- story: complete path
+- story: interactive_story_1
   steps:
   - intent: greet
   - action: utter_greet
@@ -16,18 +15,67 @@ stories:
   - action: utter_ask_location
   - intent: restaurant_search
     entities:
-    - "location": "delhi"
+    - location: mumbai
   - slot_was_set:
-    - "location": "delhi"
+    - location: mumbai
+  - action: action_chklocation
   - action: utter_ask_cuisine
   - intent: restaurant_search
     entities:
-    - "cuisine": "chinese"
+    - cuisine: American
   - slot_was_set:
-    - "cuisine": "chinese"
+    - cuisine: American
   - action: utter_ask_budget
   - intent: restaurant_search
+    entities:
+    - price: medium
   - slot_was_set:
-    - "price": "medium"
+    - price: medium
   - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nJimis Burger in 13-14, Pleasant Park, Off Link Road, Evershine Nagar, Opposite Movie Time Cinema, Malad West, Mumbai has been rated 4.5\n And the average price for two people is: 700\nPrithvi Cafe in Prithvi Theatre, Janki Kutir, Juhu Church Road, Juhu, Mumbai has been rated 4.3\n And the average price for two people is: 700\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: vijendersingh412@gmail.com
+  - slot_was_set:
+    - email: vijendersingh412@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
 
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: Bangalore
+  - slot_was_set:
+    - location: Bangalore
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: South Indian
+  - slot_was_set:
+    - cuisine: South Indian
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\n1. The Hole In The Wall Cafe in 4, 8th Main Road, Koramangala 4th Block, Bangalore has been rated 4.4. And the average price for two people here is: 600Rs\n2. Kota Kachori in 635, 100 Feet Road, Koramangala 6th Block, Bangalore has been rated 4.2. And the average price for two people here is: 400Rs\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: vijendersingh412@gmail.com
+  - slot_was_set:
+    - email: vijendersingh412@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+  - intent: goodbye

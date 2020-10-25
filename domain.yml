@@ -2,27 +2,28 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- goodbye
 - greet
+- goodbye
 - restaurant_search
+- email_confirmation
 - affirm
 - deny
 entities:
 - cuisine
-- location
 - email
+- location
 - price
 slots:
   cuisine:
-    type: text
-    influence_conversation: false
-  location:
     type: text
     influence_conversation: false
   email:
     type: text
     influence_conversation: false
   emailbody:
+    type: text
+    influence_conversation: false
+  location:
     type: text
     influence_conversation: false
   price:
@@ -67,21 +68,21 @@ responses:
       title: Rs. 300 to 700
     - payload: high
       title: More than 700
-    text: "What's the average budget for two people?"
+    text: What's the average budget for two people?
   utter_no_results_found:
   - text: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
 actions:
+- action_chklocation
 - action_search_restaurants
 - action_sendemail
-- action_chklocation
+- utter_ask_budget
 - utter_ask_cuisine
+- utter_ask_email_id
 - utter_ask_howcanhelp
 - utter_ask_location
+- utter_email_conf
+- utter_email_sent
 - utter_goodbye
 - utter_greet
-- utter_ask_email_id
-- utter_email_sent
-- utter_email_conf
-- utter_ask_budget
 - utter_no_results_found
 version: '2.0'

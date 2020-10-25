@@ -1,0 +1,13 @@
+version: "2.0"
+stories:
+- story: interactive_story_1 (C:\Users\VIJEND~1\AppData\Local\Temp\tmp807o6_ul\02c3524c5f6c46d981ccfd6ba8e57e0e_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search  # predicted: restaurant_search: [mumbai](location)
+  - slot_was_set:
+    - location: mumbai
+  - action: action_chklocation  # predicted: utter_ask_location
+  - action: utter_ask_cuisine  # predicted: action_default_fallback

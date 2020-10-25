@@ -12,6 +12,7 @@ nlu:
     - hey there
     - let's go
     - hey dude
+    - hola
     - goodmorning
     - goodevening
     - good afternoon
@@ -28,6 +29,7 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - thanks, bye
 - intent: affirm
   examples: |
     - yes
@@ -72,7 +74,6 @@ nlu:
     - in [delhi](location)
     - I am looking for some restaurants in [Mumbai](location)
     - I am looking for [mexican indian fusion](cuisine)
-    - can you book a table in [rome](location) in a [moderate]{"entity": "price", "value": "mid"} price range with [british](cuisine) food for [four]{"entity": "people", "value": "4"} people
     - [central](location) [indian](cuisine) restaurant
     - please help me to find restaurants in [pune](location)
     - Please find me a restaurantin [bangalore](location)
@@ -84,7 +85,6 @@ nlu:
     - please find me a restaurant in [ahmedabad](location)
     - please show me a few [italian](cuisine) restaurants in [bangalore](location)
     - i want to find out restaurant near me
-    - [delhi](location)
     - [American](cuisine)
     - I want to know [low](price) priced mexican cuisine restaurants
     - show me [low](price) budget [chinese](cuisine) restaurants in [Agra](location)
@@ -95,38 +95,49 @@ nlu:
     - find [medium](price) cost [south indian](cuisine) restaurants in [cuttack](location)
     - [high](price) price
     - 
+    - Im hungry. Looking out for some good restaurants
+    - [medium](price)
+    - [bengaluru]{"entity": "location", "value": "Bangalore"}
+    - [South Indian](cuisine)
+    - [medium](price)
 - intent: email_confirmation
   examples: |
-    - email id : bbc@gmail.com
-    - my email id is abcd@yahoo.com
-    - email id is red@gmail.com
-    - yes. Please send it to ahbcdj@dkj.com
-    - abcde.h75@yahoo.co.in
-    - abcde_h75@yahoo.co.in
-    - jddk.2jmd@kdl.co.in
-    - xyz@sth.edu
-    - abc.def@rediffmail.com
-    - xyz@upgrad.com
-
+    - email id : [bbc@gmail.com](email)
+    - my email id is [abcd@yahoo.com](email)
+    - email id is [red@gmail.com](email)
+    - yes. Please send it to [ahbcdj@dkj.com](email)
+    - [abcde.h75@yahoo.co.in](email)
+    - [abcde_h75@yahoo.co.in](email)
+    - [jddk.2jmd@kdl.co.in](email)
+    - [xyz@sth.edu](email)
+    - [abc.def@rediffmail.com](email)
+    - [xyz@upgrad.com](email)
+    - yes. its [vijendersingh412@gmail.com](email)
+    - yes. Please send it to [vijendersingh412@gmail.com](email)
 - synonym: chinese
   examples: |
     - chines
     - Chinese
-- synonym: chinese
-  examples: |
     - "mexica"
     - "taco"
     - "mex"
     - "spanish"
+- synonym: Delhi
+  examples: |
+    - New Delhi
+    - newdelhi
+    - deali
+- synonym: mid
+  examples: |
+    - moderate
 - synonym: American
   examples: |
     - american
-    - america  
-
+    - america
 - synonym: Italian
   examples: |
     - italic
-    - italia  
+    - italia
 - synonym: North Indian
   examples: |
     - "northindian"
@@ -141,7 +152,6 @@ nlu:
     - "bengal"
     - "kashmiri"
     - "kashmir"
-
 - synonym: South Indian
   examples: |
     - "SouthIndian"
@@ -153,55 +163,32 @@ nlu:
     - "kerala"
     - "karnataka"
     - "tamil"
-
-- synonym: Delhi
-  examples: |
-    - New Delhi
-    - newdelhi
-    - deali
-
 - synonym: Bangalore
   examples: |
     - bengaluru
     - blore
     - blr
-
 - synonym: Mumbai
   examples: |
     - bombay
-
 - synonym: Hyderabad
   examples: |
     - secunderabad
     - hydrabad
-
 - synonym: Ahmedabad
   examples: |
     - Amdavad
     - Ahmadabad
-
 - synonym: Chennai
   examples: |
     - Madras
-
 - synonym: Pune
   examples: |
     - Poona
-
 - synonym: Gurgaon
   examples: |
     - Gurugram
     - Gurgao
-
-- synonym: mid
-  examples: |
-    - moderate
-
-
-- synonym: '4'
-  examples: |
-    - four
-
 - synonym: low
   examples: |
     - "lower"
@@ -233,10 +220,8 @@ nlu:
     - Lesserthan 300"
     - lesserthan 300"
     - Less than 300"
-    - less than 300"
     - lessthan 300"
     - Lessthan 300"
-
 - synonym: medium
   examples: |
     - "moderately"
@@ -252,9 +237,6 @@ nlu:
     - "300-700 "
     - "Rs. 300 to 700 "
     - "Rs.300 to 700 "
-
-- synonym: medium
-  examples: |
     - "expensive"
     - "costly"
     - "More than 700"
@@ -264,7 +246,6 @@ nlu:
     - "700 or more"
     - "luxury"
     - "luxurious"
-    - "More than 700"
     - "More than Rs.700"
     - "More than Rs. 700"
     - "more than 700"

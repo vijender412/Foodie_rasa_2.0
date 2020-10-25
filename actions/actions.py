@@ -99,17 +99,17 @@ class ActionSearchRestaurants(Action):
             for restaurant in sorted(d['restaurants'], key=lambda x: x['restaurant']['user_rating']['aggregate_rating'], reverse=True): 
                 #Getting Top 10 restaurants for chatbot response
                 if((price_dict.get(price) == 1) and (restaurant['restaurant']['average_cost_for_two'] < 300) and (count < 10)):
-                    response=response+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " has been rated "+ restaurant['restaurant']['user_rating']['aggregate_rating']+"."
-                    response=response+" And the average price for two people is: "+ str(restaurant['restaurant']['average_cost_for_two'])+"\n"
+                    response=response+str(count+1)+". "+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " has been rated "+ restaurant['restaurant']['user_rating']['aggregate_rating']+""
+                    response=response+". And the average price for two people here is: "+ str(restaurant['restaurant']['average_cost_for_two'])+"Rs\n"
                     count = count + 1
                 elif((price_dict.get(price) == 2) and (restaurant['restaurant']['average_cost_for_two'] >= 300) and (restaurant['restaurant']['average_cost_for_two'] <= 700) and (count < 10)):
-                    response=response+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " has been rated "+ restaurant['restaurant']['user_rating']['aggregate_rating']+"\n"
-                    response=response+" And the average price for two people is: "+ str(restaurant['restaurant']['average_cost_for_two'])+"\n"
+                    response=response+str(count+1)+". "+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " has been rated "+ restaurant['restaurant']['user_rating']['aggregate_rating']+""
+                    response=response+". And the average price for two people here is: "+ str(restaurant['restaurant']['average_cost_for_two'])+"Rs\n"
                     count = count + 1                        
                 elif((price_dict.get(price) == 3) and (restaurant['restaurant']['average_cost_for_two'] > 700) and (count < 10)):
-                    response=response+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " has been rated "+ restaurant['restaurant']['user_rating']['aggregate_rating']+"\n"
-                    response=response+" And the average price for two people is: "+ str(restaurant['restaurant']['average_cost_for_two'])+"\n"
-                    count = count + 1           
+                    response=response+str(count+1)+". "+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " has been rated "+ restaurant['restaurant']['user_rating']['aggregate_rating']+""
+                    response=response+". And the average price for two people here is: "+ str(restaurant['restaurant']['average_cost_for_two'])+"Rs\n"
+                    count = count + 1         
                 if(count==5):
                     dispatcher.utter_message(response)
         if(count<5 and count>0):
@@ -126,9 +126,9 @@ class ActionSendEmail(Action):
         return 'action_sendemail'
 
     def run(self, dispatcher, tracker, domain):
-        from_user = 'foodie.chatbot10@gmail.com'
+        from_user = 'billiondollar.plutocrat.8@gmail.com' # foodie.chatbot10@gmail.com
         to_user = tracker.get_slot('email')
-        password = 'upgrad123'
+        password = 'Dev811995'
         server = smtplib.SMTP('smtp.gmail.com',587)
         server.starttls()
         server.login(from_user, password)
