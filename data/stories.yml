@@ -115,7 +115,7 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: Generated Story -827644725869975230
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -216,7 +216,7 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: Generated Story -4806456187450650271
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -332,7 +332,7 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: Generated Story -6493702937953101747
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -361,7 +361,7 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: Generated Story -467102121680610445
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -391,7 +391,7 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: Generated Story -9018985870351923881
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -435,7 +435,7 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: Generated Story -9121026940118868829
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -505,7 +505,7 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: Generated Story -8456891038647883165
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -579,7 +579,7 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: Generated Story -289419455441063784
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -648,7 +648,7 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: Generated Story -8291751314978217774
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -684,7 +684,7 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: Generated Story -5493920005115204246
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -738,7 +738,7 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: Generated Story -3993976478796012823
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -801,7 +801,7 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: Generated Story -5521520784449782755
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -837,7 +837,7 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: Generated Story -5521520784449782755
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -873,7 +873,7 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: Generated Story -3453605797567864580
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -1106,7 +1106,7 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: Generated Story -8276806597703729386
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -1144,7 +1144,35 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: Generated Story -5421949691436598129
+- story: Generated Story 9149284125683997042
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: rishikesh
+  - slot_was_set:
+    - location: rishikesh
+  - action: action_chklocation
+  - intent: restaurant_search
+    entities:
+    - location: Bangalore
+  - slot_was_set:
+    - location: Bangalore
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+  - action: utter_cuisine_error
+  - intent: restaurant_search
+    entities:
+    - location: cake
+  - slot_was_set:
+    - location: cake
+  - action: utter_cuisine_error
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -1168,6 +1196,7 @@ stories:
     - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
   - intent: deny
   - action: utter_goodbye
+
 - story: Generated Story 2096977699098053474
   steps:
   - intent: greet
@@ -1264,7 +1293,7 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: Generated Story -4467094896223864465
+- story: Interactive Story - Automation
   steps:
   - intent: greet
   - action: utter_greet
@@ -1402,6 +1431,80 @@ stories:
   - action: utter_email_conf
   - intent: affirm
   - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: vijendersingh412@gmail.com
+  - slot_was_set:
+    - email: vijendersingh412@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: delhi
+  - slot_was_set:
+    - location: delhi
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: South Indian
+  - slot_was_set:
+    - cuisine: South Indian
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\n1. AMA Cafe in House 6, New Colony, Majnu ka Tilla, New Delhi has been rated 4.5. And the average price for two people here is: 550Rs\n2. Punjabi Angithi in 32-22, A 4, DDA Market, Paschim Vihar, New Delhi has been rated 4.3. And the average price for two people here is: 400Rs\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: dkdevmallya@gmail.com
+  - slot_was_set:
+    - email: dkdevmallya@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: delhi
+  - slot_was_set:
+    - location: delhi
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: North Indian
+  - slot_was_set:
+    - cuisine: North Indian
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\n1. AMA Cafe in House 6, New Colony, Majnu ka Tilla, New Delhi has been rated 4.5. And the average price for two people here is: 550Rs\n2. Punjabi Angithi in 32-22, A 4, DDA Market, Paschim Vihar, New Delhi has been rated 4.3. And the average price for two people here is: 400Rs\n"
+  - action: utter_email_conf
   - intent: email_confirmation
     entities:
     - email: vijendersingh412@gmail.com

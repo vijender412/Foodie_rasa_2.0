@@ -138,8 +138,9 @@ class ActionSendEmail(Action):
         msg['TO'] = to_user
         msg['Subject'] = subject
         body = tracker.get_slot('emailbody')
-        body_header = '''Hi User, \n \n  '''
+        body_header = '''Hi User, \n \n'''
         body_footer = '''\n\n Thanks & Regards \n Team: Foodie Khana \n For more information reply on same mail. Our Team will connect with you soon.'''
+        body = body_header+body+body_footer
         msg.attach(MIMEText(body,'plain'))
         text = msg.as_string()
         server.sendmail(from_user,to_user,text)

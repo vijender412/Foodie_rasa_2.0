@@ -30,6 +30,7 @@ nlu:
     - bye bye
     - see you later
     - thanks, bye
+    - thanks
 - intent: affirm
   examples: |
     - yes
@@ -105,7 +106,7 @@ nlu:
     - [Mexican](cuisine)
     - find me a restaurant
     - [high](price)
-    - [mumbai](location)
+    - find me a restaurant in [delhi](location)
     - [North Indian](cuisine)
     - [medium](price)
 - intent: email_confirmation
@@ -126,7 +127,8 @@ nlu:
     - yes send at [vijendersingh412@gmail.com](email)
     - yes its [vijendersingh412@gmail.com](email)
     - [vijendersingh412@gmail.com](email)
-    - [vijendersingh412@gmail.com](email)
+    - [dkdevmallya@gmail.com](email)
+    - yes send me at [vijendersingh412@gmail.com](email)
 - synonym: Prayagraj
   examples: |
     - Allahabad
