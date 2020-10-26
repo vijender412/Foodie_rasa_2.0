@@ -79,47 +79,6 @@ stories:
   - action: action_sendemail
   - action: utter_email_sent
 
-- story: interactive_story_3
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_search
-    entities:
-    - location: Rishikesh
-  - slot_was_set:
-    - location: Rishikesh
-  - action: action_chklocation
-  - intent: restaurant_search
-    entities:
-    - location: Prayagraj
-  - slot_was_set:
-    - location: Prayagraj
-  - action: action_chklocation
-  - action: utter_ask_cuisine
-  - intent: restaurant_search
-    entities:
-    - cuisine: chinese
-  - slot_was_set:
-    - cuisine: chinese
-  - action: utter_ask_budget
-  - intent: restaurant_search
-    entities:
-    - price: 'medium'
-  - slot_was_set:
-    - price: 'medium'
-  - action: action_search_restaurants
-  - slot_was_set:
-    - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
-  - action: utter_email_conf
-  - intent: email_confirmation
-    entities:
-    - email: xyz@sth.edu
-  - slot_was_set:
-    - email: xyz@sth.edu
-  - action: action_sendemail
-  - action: utter_email_sent
-
-
 - story: interactive_story_4
   steps:
   - intent: greet
@@ -133,7 +92,6 @@ stories:
     - location: chennai
   - action: action_chklocation
   - action: utter_ask_cuisine
-
   - intent: restaurant_search
     entities:
     - cuisine: South Indian
@@ -149,6 +107,1301 @@ stories:
   - slot_was_set:
     - emailbody: "Showing you top rated restaurants:\n1. The Hole In The Wall Cafe in 4, 8th Main Road, Koramangala 4th Block, Bangalore has been rated 4.4. And the average price for two people here is: 600Rs\n2. Kota Kachori in 635, 100 Feet Road, Koramangala 6th Block, Bangalore has been rated 4.2. And the average price for two people here is: 400Rs\n"
   - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: vijendersingh412@gmail.com
+  - slot_was_set:
+    - email: vijendersingh412@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story -827644725869975230
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: jaipur
+  - slot_was_set:
+    - location: jaipur
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: mexican
+  - slot_was_set:
+    - cuisine: mexican
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nYauatcha in Raheja Towers, Bandra Kurla Complex, Mumbai has been rated 4.7\n And the average price for two people is: 2800\nPa Pa Ya in Level 3, Palladium Mall, Senapati Bapat Marg, Lower Parel, Mumbai has been rated 4.6\n And the average price for two people is: 2000\nPa Pa Ya in G-2, Ground Floor, Third, North Avenue, Maker Maxity, Bandra Kurla Complex, Mumbai has been rated 4.6\n And the average price for two people is: 2000\nHakkasan in 206, Krystal, Waterfield Road, Linking Road, Bandra West has been rated 4.5\n And the average price for two people is: 2600\nMamagoto in 133, Ground Floor, Gazebo House, Hill Road, Bandra West, Mumbai, Maharashtra has been rated 4.5\n And the average price for two people is: 1500\nPa Pa Ya in Hotel Diplomat, Whitehouse Building, 24 - 26, B.K Boman Behram Marg, Apollo Bunder, Colaba, Mumbai has been rated 4.5\n And the average price for two people is: 2000\nJia The Oriental Kitchen in 2, Dhanraj Mahal, C. S. Marg, Colaba, Mumbai has been rated 4.5\n And the average price for two people is: 2500\nShaollin Temple in Krishna Avtar Building, Plot F/3, Palm Beach Road, Sector 14, CBD-Belapur, Navi Mumbai has been rated 4.4\n And the average price for two people is: 1000\nChina Bistro in Ground Floor, Infinity Shopping Complex, Vasant Vihar, Thane West has been rated 4.4\n And the average price for two people is: 1500\nThe Fatty Bao in Shop 1, Ground Floor, Sentinel Building, Hiranandani Business Park, Powai, Mumbai has been rated 4.3\n And the average price for two people is: 1800\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: myemail123@yahoo.co.in
+  - slot_was_set:
+    - email: myemail123@yahoo.co.in
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story 2374489657224742077
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: mumbai
+  - slot_was_set:
+    - location: mumbai
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine: chinese
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: high
+  - slot_was_set:
+    - price: high
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nYauatcha in Raheja Towers, Bandra Kurla Complex, Mumbai has been rated 4.7\n And the average price for two people is: 2800\nPa Pa Ya in Level 3, Palladium Mall, Senapati Bapat Marg, Lower Parel, Mumbai has been rated 4.6\n And the average price for two people is: 2000\nPa Pa Ya in G-2, Ground Floor, Third, North Avenue, Maker Maxity, Bandra Kurla Complex, Mumbai has been rated 4.6\n And the average price for two people is: 2000\nHakkasan in 206, Krystal, Waterfield Road, Linking Road, Bandra West has been rated 4.5\n And the average price for two people is: 2600\nMamagoto in 133, Ground Floor, Gazebo House, Hill Road, Bandra West, Mumbai, Maharashtra has been rated 4.5\n And the average price for two people is: 1500\nPa Pa Ya in Hotel Diplomat, Whitehouse Building, 24 - 26, B.K Boman Behram Marg, Apollo Bunder, Colaba, Mumbai has been rated 4.5\n And the average price for two people is: 2000\nJia The Oriental Kitchen in 2, Dhanraj Mahal, C. S. Marg, Colaba, Mumbai has been rated 4.5\n And the average price for two people is: 2500\nShaollin Temple in Krishna Avtar Building, Plot F/3, Palm Beach Road, Sector 14, CBD-Belapur, Navi Mumbai has been rated 4.4\n And the average price for two people is: 1000\nChina Bistro in Ground Floor, Infinity Shopping Complex, Vasant Vihar, Thane West has been rated 4.4\n And the average price for two people is: 1500\nThe Fatty Bao in Shop 1, Ground Floor, Sentinel Building, Hiranandani Business Park, Powai, Mumbai has been rated 4.3\n And the average price for two people is: 1800\n"
+  - action: utter_email_conf
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Generated Story 359772783008936452
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: pune
+  - slot_was_set:
+    - location: pune
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: mexican
+  - slot_was_set:
+    - cuisine: mexican
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nDarshan in Amar Business Park, Opposite Sadanand Hotel, Baner, Pune has been rated 4.6\n And the average price for two people is: 700\nKohli's Firangi Dhaba in Opposite KPIT, Swaraj Chowk, Phase 1, Hinjawadi, Pune has been rated 3.9\n And the average price for two people is: 600\nThe Mexican Wave in Shop 3, Konark Arcade Society, Near Datta Mandir Chowk, Viman Nagar, Pune has been rated 3.0\n And the average price for two people is: 450\nMexican Rodeo in 2nd Floor, Westend Mall, Wireless Colony, Aundh, Pune has been rated 2.6\n And the average price for two people is: 600\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: myemail123@gmail.com
+  - slot_was_set:
+    - email: myemail123@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story -4806456187450650271
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: Bangalore
+  - slot_was_set:
+    - location: Bangalore
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: italian
+  - slot_was_set:
+    - cuisine: italian
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nLa Pino'z Pizza in Shop 24,Shankar Plaza, 80 feet road, Koramangala 4th Block, Bangalore has been rated 4.2\n And the average price for two people is: 600\nVinny's in No 22,1st Floor ,MSR Nagar ITI layout, New BEL Road, Bangalore has been rated 4.1\n And the average price for two people is: 700\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: myemail123@gmail.com
+  - slot_was_set:
+    - email: myemail123@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story 7128457934899105015
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: kolkata
+  - slot_was_set:
+    - location: kolkata
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: american
+  - slot_was_set:
+    - cuisine: american
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nThe Chicken House  in 29/1, Hare Krishna Kunal Road, Entally, Kolkata has been rated 3.9. And the average price for two people is: 250\nWBFC in 17/1, Marquis Street, Wellesley, Kolkata has been rated 3.6. And the average price for two people is: 200\nSFC in 15/1, Biren Roy Road East, Behala, Kolkata has been rated 3.2. And the average price for two people is: 250\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: myemail123@gmail.com
+  - slot_was_set:
+    - email: myemail123@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story 472595812697765453
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: mubaim
+  - slot_was_set:
+    - location: mubaim
+  - action: action_chklocation
+  - intent: restaurant_search
+    entities:
+    - location: mumbai
+  - slot_was_set:
+    - location: mumbai
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: american
+  - slot_was_set:
+    - cuisine: american
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: myemail123@gmail.com
+  - slot_was_set:
+    - email: myemail123@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story -6493702937953101747
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: chandigarh
+  - slot_was_set:
+    - location: chandigarh
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine: chinese
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nRaju Chinese Fast Food in Booth 75, Sector 23, Chandigarh has been rated 4.0. And the average price for two people is: 200\nSandhya in Booth 37-40, Rehri Market, Sector 7, Panchkula has been rated 3.8. And the average price for two people is: 250\n"
+  - action: utter_email_conf
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Generated Story -467102121680610445
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: mumbai
+  - slot_was_set:
+    - location: mumbai
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: american
+  - slot_was_set:
+    - cuisine: american
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Generated Story -9018985870351923881
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: mumbai
+  - slot_was_set:
+    - location: mumbai
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: american
+  - slot_was_set:
+    - cuisine: american
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine: chinese
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: high
+  - slot_was_set:
+    - price: high
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nYauatcha in Raheja Towers, Bandra Kurla Complex, Mumbai has been rated 4.8\n And the average price for two people is: 2800\nHakkasan in 206, Krystal, Waterfield Road, Linking Road, Bandra West has been rated 4.6\n And the average price for two people is: 2600\nPa Pa Ya in Level 3, Palladium Mall, Senapati Bapat Marg, Lower Parel, Mumbai has been rated 4.6\n And the average price for two people is: 2000\nPa Pa Ya in G-2, Ground Floor, Third, North Avenue, Maker Maxity, Bandra Kurla Complex, Mumbai has been rated 4.6\n And the average price for two people is: 2000\nPa Pa Ya in Hotel Diplomat, Whitehouse Building, 24 - 26, B.K Boman Behram Marg, Apollo Bunder, Colaba, Mumbai has been rated 4.6\n And the average price for two people is: 2000\nJia The Oriental Kitchen in 2, Dhanraj Mahal, C. S. Marg, Colaba, Mumbai has been rated 4.6\n And the average price for two people is: 2500\nMamagoto in 133, Ground Floor, Gazebo House, Hill Road, Bandra West, Mumbai, Maharashtra has been rated 4.5\n And the average price for two people is: 1500\nShaollin Temple in Krishna Avtar Building, Plot F/3, Palm Beach Road, Sector 14, CBD-Belapur, Navi Mumbai has been rated 4.4\n And the average price for two people is: 1000\nChina Bistro in Ground Floor, Infinity Shopping Complex, Vasant Vihar, Thane West has been rated 4.4\n And the average price for two people is: 1500\nThe Fatty Bao in Shop 1, Ground Floor, Sentinel Building, Hiranandani Business Park, Powai, Mumbai has been rated 4.3\n And the average price for two people is: 1800\n"
+  - action: utter_email_conf
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Generated Story -9121026940118868829
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: Bangalore
+  - slot_was_set:
+    - location: Bangalore
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: south indian
+  - slot_was_set:
+    - cuisine: south indian
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nMavalli Tiffin Room (MTR) in Namma Metro Pillar 62, 100 Feet Road, Indiranagar, Bangalore has been rated 4.3\n And the average price for two people is: 300\nKamat Lokaruchi in Janapada Loka, Archakrahalli, Ramanagara, Bangalore-Mysore Road, Mysore Road, Bangalore has been rated 4.2\n And the average price for two people is: 400\nHotel Nalapaka in 28, 12th Main, 1st Block, Rajajinagar, Bangalore has been rated 4.2\n And the average price for two people is: 400\nMavalli Tiffin Room (MTR) in 44, Kutchi Bhavan, Opposite To Mini Forest, 1st Main, JP Nagar 3rd Phase, JP Nagar, Bangalore has been rated 4.1\n And the average price for two people is: 300\nAnjappar in 4, 17th Main, Near BDA Complex, 100 Feet Road, B Block, Koramangala 4th Block, Bangalore has been rated 3.9\n And the average price for two people is: 650\nAnjappar in 54, 3rd Main Road, Defence Colony, 100 Feet Road, Indiranagar, Bangalore has been rated 3.8\n And the average price for two people is: 650\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: temail99999@gmail.com
+  - slot_was_set:
+    - email: temail99999@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story 7207872458031152409
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: kolkata
+  - slot_was_set:
+    - location: kolkata
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine: chinese
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nMomo I Am in RBD Cinema, 1st Floor, Sector 5, Salt Lake, Kolkata has been rated 4.9\n And the average price for two people is: 550\nWTF! - Where's The Food in E-75, Sukant Nagar, Sector 4, Salt Lake, Kolkata has been rated 4.6\n And the average price for two people is: 300\nMomo I Am in CD 18, Next To Kalyan Jewelers, City Centre 1, Sector 1, Salt Lake has been rated 4.5\n And the average price for two people is: 550\nMomo I Am in 43 Ballygunge Gardens, Gariahat, Golpark, Kolkata has been rated 4.5\n And the average price for two people is: 550\nOverdose in 23, Lake Terrace, Sarath Bose Road, Southern Avenue, Kolkata has been rated 4.5\n And the average price for two people is: 550\nMomo I Am in Shop G-B, Ground Floor, Tarun Alo Apartment, Chinar Park has been rated 4.4\n And the average price for two people is: 550\nMomo I Am in 195 C, Near Bandhan Bank, Lake Gardens, Kolkata has been rated 4.4\n And the average price for two people is: 550\nBlu Orchid in C22, Sammilani Park, Survey Park Area, Ajoy Nagar, Kolkata has been rated 4.3\n And the average price for two people is: 700\nDenzong Kitchen in 9A, Bikramgarh, Jadavpur, Kolkata has been rated 4.1\n And the average price for two people is: 300\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: temail99999@gmail.com
+  - slot_was_set:
+    - email: temail99999@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story -8456891038647883165
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: mumbai
+  - slot_was_set:
+    - location: mumbai
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: american
+  - slot_was_set:
+    - cuisine: american
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: high
+  - slot_was_set:
+    - price: high
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nThe Burger Pit in Shop 3 & 4, Saffron Building, Shubhjivan Circle, IC Colony, Holy Cross Road, Borivali West, Mumbai has been rated 4.5\n And the average price for two people is: 1200\nStacks And Racks in Shop 1, Ganga Nivas, Opposite Toyota Showroom, Link Road, Malad West, Mumbai has been rated 4.4\n And the average price for two people is: 1000\nGenuine Broaster Chicken in Shop 115, First Floor, Satra Plaza, Vashi, Navi Mumbai has been rated 4.4\n And the average price for two people is: 1150\nToit Brewery in Mathuradas Mill Compound, Senapati Bapat Marg, Lower ParelMumbai, Lower Parel, Mumbai has been rated 4.4\n And the average price for two people is: 1600\nThree Chicks and A Bear in Lodha Supremus, Survey 453, Senapati Bapat Marg, Railway Colony, Lower Parel, Mumbai has been rated 4.3\n And the average price for two people is: 800\nBetween Breads in 2, Kalpitam Apartments, Opposite Hawaiian Shack, 16th Road, Pali Hill, Bandra West has been rated 4.0\n And the average price for two people is: 1000\n212 All Day Cafe & Bar in F-97, First Floor,Phoenix Market City, LBS Road, Kurla, Mumbai has been rated 3.8\n And the average price for two people is: 1500\nCP7- The BBQ Heaven in Shop 15 & 16, Station Main Road, Sector 8, Kharghar, Navi Mumbai has been rated 3.7\n And the average price for two people is: 750\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: temail99999@gmail.com
+  - slot_was_set:
+    - email: temail99999@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story 7644860736074729188
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: mumbai
+  - slot_was_set:
+    - location: mumbai
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: american
+  - slot_was_set:
+    - cuisine: american
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nFrisbees in Shop 6, A39, Labaik House, Chimbai Road, Near St. Andrews Church, Hill Road, Bandra West has been rated 4.4\n And the average price for two people is: 600\nFrisbees in Shop 5, Rendezvous Building, Sab TV Road, Shastri Nagar, Andheri Lokhandwala, Andheri West has been rated 4.4\n And the average price for two people is: 600\nBruciato Food Factory in Shop 17, Rainbow Tower, Sector 20, Airoli, Navi Mumbai has been rated 4.3\n And the average price for two people is: 600\nThe Serial Griller in Shop 9, A Wing, Trimurti CHS, SRA Building, Gulab Nagar, Khar, Mumbai has been rated 4.1\n And the average price for two people is: 600\nThe Brew Corner in 5 & 6, Emerald Wing, Near GG College, Vasai, Mumbai has been rated 4.0\n And the average price for two people is: 650\nWat-A-Burger! in G7, Runwal Greens, Mulund-Goregaon Link Road, Mulund West, Mumbai has been rated 4.0\n And the average price for two people is: 400\nHowra Burger in 6th Floor, Fakhrudin Villa, Opposite St. Andrew's Church, Hill Road, Bandra West has been rated 3.9\n And the average price for two people is: 600\n#ThatsCheesy in 19A, Siddhivinayak Commercial Complex, MIDC, Mahakali, Mumbai has been rated 3.9\n And the average price for two people is: 600\nCafe 2.0 in 541, Noor Mahal, Near Koolar Irani, Dr. Babasaheb Ambedkar Road, Matunga East, Mumbai has been rated 3.8\n And the average price for two people is: 300\nKatty'z in 1B, Amrapali Arcade, Opposite Jasmin Tower, Vasant Vihar, Thane West has been rated 3.7\n And the average price for two people is: 400\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: temail99999@gmail.com
+  - slot_was_set:
+    - email: temail99999@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story -289419455441063784
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: chandigarh
+  - slot_was_set:
+    - location: chandigarh
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine: chinese
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nRaju Chinese Fast Food in Booth 75, Sector 23, Chandigarh has been rated 4.0. And the average price for two people is: 200\nSandhya in Booth 37-40, Rehri Market, Sector 7, Panchkula has been rated 3.8. And the average price for two people is: 250\n"
+  - action: utter_email_conf
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Generated Story 1050287870952830368
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: rishikesh
+  - slot_was_set:
+    - location: rishikesh
+  - action: action_chklocation
+  - intent: restaurant_search
+    entities:
+    - location: Prayagraj
+  - slot_was_set:
+    - location: Prayagraj
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine: chinese
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: high
+  - slot_was_set:
+    - price: high
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nBarbeque Nation in Fifth Floor, P Square Mall, MG Road, Civil Lines, Allahabad has been rated 4.7\n And the average price for two people is: 1200\nOld School Cafe in 33/2/A, Stretchy Road, Civil Lines, Allahabad has been rated 4.4\n And the average price for two people is: 1000\nEl Chico Restaurant in 142A, 32, Mahatma Gandhi, Civil Lines, Allahabad has been rated 4.4\n And the average price for two people is: 800\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: temail99999@gmail.com
+  - slot_was_set:
+    - email: temail99999@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story -8291751314978217774
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: kolkata
+  - slot_was_set:
+    - location: kolkata
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: american
+  - slot_was_set:
+    - cuisine: american
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nThe Chicken House  in 29/1, Hare Krishna Kunal Road, Entally, Kolkata has been rated 3.9. And the average price for two people is: 250\nWBFC in 17/1, Marquis Street, Wellesley, Kolkata has been rated 3.6. And the average price for two people is: 200\nSFC in 15/1, Biren Roy Road East, Behala, Kolkata has been rated 3.2. And the average price for two people is: 250\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: temail99999@gmail.com
+  - slot_was_set:
+    - email: temail99999@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story -5493920005115204246
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: mubaim
+  - slot_was_set:
+    - location: mubaim
+  - action: action_chklocation
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: mumbai
+  - slot_was_set:
+    - location: mumbai
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: american
+  - slot_was_set:
+    - cuisine: american
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: south indian
+  - slot_was_set:
+    - cuisine: south indian
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nHotel Ram Ashraya in Bhandarkar Road, Matunga East, Mumbai has been rated 4.6. And the average price for two people is: 200\nCafe Madras in 38 B, Circle House, King's Circle Near Maheshwari Udyan, Matunga East, Mumbai has been rated 4.4. And the average price for two people is: 250\nGranville IDC Kitchen in Shop 1, Bhandarkar Bhavan Court Lane, Near Borivali Station, SV Road, Borivali West, Mumbai has been rated 4.2. And the average price for two people is: 200\nUdipi Idli House in 462, Ram Bhavan, Opposite Jain temple, Dr B Ambedkar Road, King Circle, Matunga East, Mumbai has been rated 4.1. And the average price for two people is: 150\nMani's Lunch Home in 153 C, Mahskar Building, Near Ruia College, Matunga East, Mumbai has been rated 4.0. And the average price for two people is: 200\nAnand Bhavan in 461/A, Ram Niwas, Maheshwari Udyan, Ambedkar Road, Matunga East, Mumbai has been rated 4.0. And the average price for two people is: 200\nSharda Bhavan in Opposite Matunga Railway Station, Lakhamsi Napoo Road, Matunga East, Mumbai has been rated 4.0. And the average price for two people is: 200\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: temail99999@gmail.com
+  - slot_was_set:
+    - email: temail99999@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story -3993976478796012823
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: mubaim
+  - slot_was_set:
+    - location: mubaim
+  - action: action_chklocation
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: mumbai
+  - slot_was_set:
+    - location: mumbai
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: american
+  - slot_was_set:
+    - cuisine: american
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine: chinese
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: south indian
+  - slot_was_set:
+    - cuisine: south indian
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nHotel Ram Ashraya in Bhandarkar Road, Matunga East, Mumbai has been rated 4.6. And the average price for two people is: 200\nCafe Madras in 38 B, Circle House, King's Circle Near Maheshwari Udyan, Matunga East, Mumbai has been rated 4.4. And the average price for two people is: 250\nGranville IDC Kitchen in Shop 1, Bhandarkar Bhavan Court Lane, Near Borivali Station, SV Road, Borivali West, Mumbai has been rated 4.2. And the average price for two people is: 200\nUdipi Idli House in 462, Ram Bhavan, Opposite Jain temple, Dr B Ambedkar Road, King Circle, Matunga East, Mumbai has been rated 4.1. And the average price for two people is: 150\nMani's Lunch Home in 153 C, Mahskar Building, Near Ruia College, Matunga East, Mumbai has been rated 4.0. And the average price for two people is: 200\nAnand Bhavan in 461/A, Ram Niwas, Maheshwari Udyan, Ambedkar Road, Matunga East, Mumbai has been rated 4.0. And the average price for two people is: 200\nSharda Bhavan in Opposite Matunga Railway Station, Lakhamsi Napoo Road, Matunga East, Mumbai has been rated 4.0. And the average price for two people is: 200\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: temail99999@gmail.com
+  - slot_was_set:
+    - email: temail99999@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story -5521520784449782755
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: chennai
+  - slot_was_set:
+    - location: chennai
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: South Indian
+  - slot_was_set:
+    - cuisine: South Indian
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nSukkubhai Biriyani in 61/45, Opposite Central Bank Of  India, Asharkana Street, Alandur, Chennai has been rated 4.3. And the average price for two people is: 200\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: devmallaya@rediffmail.com
+  - slot_was_set:
+    - email: devmallaya@rediffmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story -5521520784449782755
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: chennai
+  - slot_was_set:
+    - location: chennai
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: South Indian
+  - slot_was_set:
+    - cuisine: South Indian
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nSukkubhai Biriyani in 61/45, Opposite Central Bank Of  India, Asharkana Street, Alandur, Chennai has been rated 4.3. And the average price for two people is: 200\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: devmallaya@rediffmail.com
+  - slot_was_set:
+    - email: devmallaya@rediffmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story -3453605797567864580
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: jaipur
+  - slot_was_set:
+    - location: jaipur
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: italian
+  - slot_was_set:
+    - cuisine: italian
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: high
+  - slot_was_set:
+    - price: high
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nPatissez in Shop 1 F, Lakshmi Complex, Subhash Marg Road, C Scheme, Jaipur has been rated 4.5\n And the average price for two people is: 800\nLa Palma Cafe and Lounge Bar in The Hotel Garden View, Subhash Marg, Near Ahinsa Circle, C Scheme has been rated 4.5\n And the average price for two people is: 1400\nGiardino - Taj Jai Mahal Palace in Taj Jai Mahal Palace, Jacob Road, Civil Lines, Jaipur has been rated 4.4\n And the average price for two people is: 4500\nLa Italia Restaurant & Lounge Bar - Hotel Park Inn in Rooftop, Hotel Park Inn, Jaisingh Highway, Bani Park, Jaipur has been rated 4.2\n And the average price for two people is: 1500\nGood Times Live in Sunny Trade Centre , New Atish Market, Mansarovar, Jaipur has been rated 4.1\n And the average price for two people is: 1200\nFat Lulu's in Food Court, MZ Floor, WTP Mall, JLN Marg, Malviya Nagar, Jaipur has been rated 4.0\n And the average price for two people is: 1300\nBar Palladio Jaipur in Hotel Narain Niwas, Kanota Bagh, Narayan Singh Circle, Jaipur has been rated 4.0\n And the average price for two people is: 1800\nJaipur Modern Kitchen in 51, Sardar Patel Marg, Dhuleshwar Garden Crossing, C Scheme, Jaipur has been rated 4.0\n And the average price for two people is: 1200\nTeaQuila - A Fashion Cafe in 32, Girdhar Marg, Sunder Nagar, Malviya Nagar, Jaipur has been rated 3.9\n And the average price for two people is: 800\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: myemail123@gmail.com
+  - slot_was_set:
+    - email: myemail123@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story 3662094158370601764
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: chandigarh
+  - slot_was_set:
+    - location: chandigarh
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: south indian
+  - slot_was_set:
+    - cuisine: south indian
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: '1500'
+  - slot_was_set:
+    - price: '1500'
+  - action: utter_budget_error
+  - intent: restaurant_search
+    entities:
+    - price: high
+  - slot_was_set:
+    - price: high
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Generated Story 7390501834219179483
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: agra
+  - slot_was_set:
+    - location: agra
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine: chinese
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nThe Momo Corner in E 146/14, Tanki Road, Near Water Tank, Ghatwasan, Kamla Nagar, Agra has been rated 4.1. And the average price for two people is: 200\nBhagat Halwai in Heera Bagh, Khel Gaon Dayal Bagh, Agra has been rated 3.7. And the average price for two people is: 250\nChinese Dhaba in Near Kargil Petrol Pump, Sikandra, Agra has been rated 3.4. And the average price for two people is: 150\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: myemail123@gmail.com
+  - slot_was_set:
+    - email: myemail123@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story 5012145479196222700
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - cuisine: mexican
+  - slot_was_set:
+    - cuisine: mexican
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: Prayagraj
+  - slot_was_set:
+    - location: Prayagraj
+  - action: action_chklocation
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - action: utter_email_conf
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Generated Story 9144438955876682967
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: kolkata
+  - slot_was_set:
+    - location: kolkata
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: American
+  - slot_was_set:
+    - cuisine: American
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: American
+  - slot_was_set:
+    - cuisine: American
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nMomo I Am in Shop G-B, Ground Floor, Tarun Alo Apartment, Chinar Park has been rated 4.4\n And the average price for two people is: 550\nDada Boudi Restaurant in 10/8, S.N. Bannerjee Road, Barrackpore, Kolkata has been rated 4.3\n And the average price for two people is: 550\nCALCUTTA 64 in BC 25, Sector 1, Salt Lake has been rated 4.2\n And the average price for two people is: 450\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: myemail123@gmail.com
+  - slot_was_set:
+    - email: myemail123@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story 8694187441886195902
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: kolkata
+  - slot_was_set:
+    - location: kolkata
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: American
+  - slot_was_set:
+    - cuisine: American
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: south indian
+  - slot_was_set:
+    - cuisine: south indian
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nJyoti Vihar in 3A/1, Ho Chi Minh Sarani, Camac Street Area, Kolkata has been rated 4.2. And the average price for two people is: 250\nNew United Cafe in 629, Diamond Harbour Road, Behala, Kolkata has been rated 4.0. And the average price for two people is: 200\nUdipi Home in P 545, Jatin Das Road has been rated 3.9. And the average price for two people is: 250\n"
+  - action: utter_email_conf
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Generated Story -8276806597703729386
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - location: kolkata
+  - slot_was_set:
+    - location: kolkata
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: American
+  - slot_was_set:
+    - cuisine: American
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: mexican
+  - slot_was_set:
+    - cuisine: mexican
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nWrap Swap in 106, JODHPUR GARDEN, JODHPUR PARK, Jodhpur Park has been rated 3.2. And the average price for two people is: 200\n"
+  - action: utter_email_conf
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Generated Story -5421949691436598129
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - cuisine: italian
+    - location: pune
+  - slot_was_set:
+    - cuisine: italian
+  - slot_was_set:
+    - location: pune
+  - action: action_chklocation
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
+  - intent: deny
+  - action: utter_goodbye
+- story: Generated Story 2096977699098053474
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - cuisine: italian
+    - location: ghazipur
+  - slot_was_set:
+    - cuisine: italian
+  - slot_was_set:
+    - location: ghazipur
+  - action: action_chklocation
+  - intent: restaurant_search
+    entities:
+    - location: Bangalore
+  - slot_was_set:
+    - location: Bangalore
+  - action: action_chklocation
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nLa Pino'z Pizza in Shop 24,Shankar Plaza, 80 feet road, Koramangala 4th Block, Bangalore has been rated 4.2\n And the average price for two people is: 600\nVinny's in No 22,1st Floor ,MSR Nagar ITI layout, New BEL Road, Bangalore has been rated 4.1\n And the average price for two people is: 700\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: myemail123@gmail.com
+  - slot_was_set:
+    - email: myemail123@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story 1368753262632138738
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+    - location: chandigarh
+  - slot_was_set:
+    - cuisine: chinese
+  - slot_was_set:
+    - location: chandigarh
+  - action: action_chklocation
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nRaju Chinese Fast Food in Booth 75, Sector 23, Chandigarh has been rated 4.0. And the average price for two people is: 200\nSandhya in Booth 37-40, Rehri Market, Sector 7, Panchkula has been rated 3.8. And the average price for two people is: 250\n"
+  - action: utter_email_conf
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Generated Story 5953897354453566584
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+    - location: chandigarh
+  - slot_was_set:
+    - cuisine: chinese
+  - slot_was_set:
+    - location: chandigarh
+  - action: action_chklocation
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: low
+  - slot_was_set:
+    - price: low
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nRaju Chinese Fast Food in Booth 75, Sector 23, Chandigarh has been rated 4.0. And the average price for two people is: 200\nSandhya in Booth 37-40, Rehri Market, Sector 7, Panchkula has been rated 3.8. And the average price for two people is: 250\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: temail99999@gmail.com
+  - slot_was_set:
+    - email: temail99999@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: Generated Story -4467094896223864465
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+    entities:
+    - cuisine: chinese
+    - location: bangalore
+  - slot_was_set:
+    - cuisine: chinese
+  - slot_was_set:
+    - location: bangalore
+  - action: action_chklocation
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\nSzechuan Dragon in 8, 2nd Floor, 1st Main, Arush Trapeze, Mount Joy Road, Behind BMS College of Engineering, Hanumanthnagar, Banashankari, Bangalore has been rated 4.1\n And the average price for two people is: 600\nMomoz in 806, Near ICICI Bank, 7th Cross, 16th Main, 2nd Stage, BTM, Bangalore has been rated 4.0\n And the average price for two people is: 600\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: temail99999@gmail.com
+  - slot_was_set:
+    - email: temail99999@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: delhi
+  - slot_was_set:
+    - location: delhi
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: Mexican
+  - slot_was_set:
+    - cuisine: Mexican
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\n1. AMA Cafe in House 6, New Colony, Majnu ka Tilla, New Delhi has been rated 4.5. And the average price for two people here is: 550Rs\n2. Punjabi Angithi in 32-22, A 4, DDA Market, Paschim Vihar, New Delhi has been rated 4.3. And the average price for two people here is: 400Rs\n"
+  - action: utter_email_conf
+  - intent: email_confirmation
+    entities:
+    - email: vijendersingh412@gmail.com
+  - slot_was_set:
+    - email: vijendersingh412@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: delhi
+  - slot_was_set:
+    - location: delhi
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: North Indian
+  - slot_was_set:
+    - cuisine: North Indian
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: high
+  - slot_was_set:
+    - price: high
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\n1. Indian Accent in The Lodhi, Lodhi Road, New Delhi has been rated 4.9. And the average price for two people here is: 5000Rs\n2. Diggin in 10, Santushti Shopping Complex, Race Course Road, Chanakyapuri, New Delhi has been rated 4.5. And the average price for two people here is: 1300Rs\n3. Cafe Wink in G-1, Plot 9, Sikka Galaxy, Shreshtha Vihar, Anand Vihar, New Delhi has been rated 4.5. And the average price for two people here is: 800Rs\n4. Diggin in Shop 1 & 2, Sri Fort Road, Opposite Gargi College, Anand Lok, New Delhi has been rated 4.4. And the average price for two people here is: 1400Rs\n5. Gulati in 6, Pandara Road Market, New Delhi has been rated 4.4. And the average price for two people here is: 2500Rs\n6. Soho Bistro & Cafe in Khasra 264, Ground Floor, Westend Marg, Saidulajab, Saket, New Delhi has been rated 4.4. And the average price for two people here is: 1400Rs\n7. Tamasha in 28, Block A, Kasturba Gandhi Marg, Connaught Place, New Delhi has been rated 4.4. And the average price for two people here is: 1600Rs\n8. The G.T. Road in M 39, Outer Circle, Connaught Place, New Delhi has been rated 4.4. And the average price for two people here is: 1200Rs\n9. Ardor 2.1 in N-55/56 & 88/89, Outer Circle, Connaught Place, New Delhi has been rated 4.3. And the average price for two people here is: 1800Rs\n10. Rajinder Da Dhaba in AB 14, Safdarjung Enclave Market, Safdarjung, New Delhi has been rated 4.3. And the average price for two people here is: 800Rs\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
+  - intent: email_confirmation
+    entities:
+    - email: vijendersingh412@gmail.com
+  - slot_was_set:
+    - email: vijendersingh412@gmail.com
+  - action: action_sendemail
+  - action: utter_email_sent
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: restaurant_search
+    entities:
+    - location: mumbai
+  - slot_was_set:
+    - location: mumbai
+  - action: action_chklocation
+  - action: utter_ask_cuisine
+  - intent: restaurant_search
+    entities:
+    - cuisine: North Indian
+  - slot_was_set:
+    - cuisine: North Indian
+  - action: utter_ask_budget
+  - intent: restaurant_search
+    entities:
+    - price: medium
+  - slot_was_set:
+    - price: medium
+  - action: action_search_restaurants
+  - slot_was_set:
+    - emailbody: "Showing you top rated restaurants:\n1. Jimis Burger in 13-14, Pleasant Park, Off Link Road, Evershine Nagar, Opposite Movie Time Cinema, Malad West, Mumbai has been rated 4.5. And the average price for two people here is: 700Rs\n2. Prithvi Cafe in Prithvi Theatre, Janki Kutir, Juhu Church Road, Juhu, Mumbai has been rated 4.3. And the average price for two people here is: 700Rs\n"
+  - action: utter_email_conf
+  - intent: affirm
+  - action: utter_ask_email_id
   - intent: email_confirmation
     entities:
     - email: vijendersingh412@gmail.com

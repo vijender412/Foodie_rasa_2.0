@@ -56,25 +56,22 @@ nlu:
     - I am looking for some restaurants in [Delhi](location).
     - I am looking for some restaurants in [Bangalore](location)
     - show me [chinese](cuisine) restaurants
-    - show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants in the [New Delhi]{"entity": "location", "value": "Delhi"}
+    - show me [chines](cuisine) restaurants in the [New Delhi](location)
     - show me a [mexican](cuisine) place in the [centre](location)
     - i am looking for an [indian](cuisine) spot called olaolaolaolaolaola
     - search for restaurants
-    - anywhere in the [west](location)
-    - I am looking for [asian fusion](cuisine) food
-    - I am looking a restaurant in [294328](location)
     - in [Gurgaon](location)
     - [South Indian](cuisine)
     - [North Indian](cuisine)
     - [Italian](cuisine)
-    - [Chinese]{"entity": "cuisine", "value": "chinese"}
+    - [Chinese](cuisine)
     - [chinese](cuisine)
-    - [Lithuania](location)
-    - Oh, sorry, in [Italy](location)
+    - [Ludianana](location)
+    - Oh, sorry, in [chandigarh](location)
     - in [delhi](location)
     - I am looking for some restaurants in [Mumbai](location)
-    - I am looking for [mexican indian fusion](cuisine)
-    - [central](location) [indian](cuisine) restaurant
+    - I am looking for [mexican](cuisine) indian fusion
+    - central [indian](cuisine) restaurant
     - please help me to find restaurants in [pune](location)
     - Please find me a restaurantin [bangalore](location)
     - [mumbai](location)
@@ -94,14 +91,23 @@ nlu:
     - find [costly](price) restaurants in [jaipur](location)
     - find [medium](price) cost [south indian](cuisine) restaurants in [cuttack](location)
     - [high](price) price
-    - 
     - Im hungry. Looking out for some good restaurants
     - [medium](price)
-    - [bengaluru]{"entity": "location", "value": "Bangalore"}
+    - [bengaluru](location)
     - Can you suggest some good restaurants in [Rishikesh](location)
     - Okay. Show me some in [Allahabad]{"entity": "location", "value": "Prayagraj"}
     - Ill prefer [chines]{"entity": "cuisine", "value": "chinese"}
     - [>700](price)
+    - Can you suggest some good restaurants in [kolkata](location)
+    - [american]{"entity": "cuisine", "value": "American"}
+    - [<300]{"entity": "price", "value": "low"}
+    - find me restaurant
+    - [Mexican](cuisine)
+    - find me a restaurant
+    - [high](price)
+    - [mumbai](location)
+    - [North Indian](cuisine)
+    - [medium](price)
 - intent: email_confirmation
   examples: |
     - email id : [bbc@gmail.com](email)
@@ -117,6 +123,13 @@ nlu:
     - yes. its [vijendersingh412@gmail.com](email)
     - yes. Please send it to [vijendersingh412@gmail.com](email)
     - yes. Please send it to [xyz@sth.edu](email)
+    - yes send at [vijendersingh412@gmail.com](email)
+    - yes its [vijendersingh412@gmail.com](email)
+    - [vijendersingh412@gmail.com](email)
+    - [vijendersingh412@gmail.com](email)
+- synonym: Prayagraj
+  examples: |
+    - Allahabad
 - synonym: chinese
   examples: |
     - chines
@@ -125,6 +138,42 @@ nlu:
     - taco
     - mex
     - spanish
+- synonym: American
+  examples: |
+    - american
+    - america
+- synonym: low
+  examples: |
+    - <300
+    - lower
+    - cheap
+    - cheaper
+    - inexpensive
+    - less than 300
+    - cost under 300
+    - Lesser than Rs. 300
+    - Lesser than Rs.300
+    - lesser than Rs. 300
+    - lesser than Rs.300
+    - Lesserthan Rs. 300
+    - lesserthan Rs. 300
+    - lesserthan Rs.300
+    - Lesserthan Rs.300
+    - Less than Rs. 300
+    - Less than Rs.300
+    - less than Rs. 300
+    - less than Rs.300
+    - Lessthan Rs. 300
+    - lessthan Rs. 300
+    - lessthan Rs.300
+    - Lessthan Rs.300
+    - Lesser than 300
+    - lesser than 300
+    - Lesserthan 300
+    - lesserthan 300
+    - Less than 300
+    - lessthan 300
+    - Lessthan 300
 - synonym: Delhi
   examples: |
     - New Delhi
@@ -135,11 +184,6 @@ nlu:
     - bengaluru
     - blore
     - blr
-
-- synonym: American
-  examples: |
-    - american
-    - america
 - synonym: Italian
   examples: |
     - italic
@@ -172,9 +216,6 @@ nlu:
 - synonym: Mumbai
   examples: |
     - bombay
-- synonym: Prayagraj
-  examples: |
-    - Allahabad
 - synonym: Hyderabad
   examples: |
     - secunderabad
@@ -193,61 +234,23 @@ nlu:
   examples: |
     - Gurugram
     - Gurgao
-- synonym: low
-  examples: |
-    - lower
-    - cheap
-    - cheaper
-    - <300
-    - <300 
-    - inexpensive
-    - less than 300
-    - cost under 300
-    - Lesser than Rs. 300
-    - Lesser than Rs.300
-    - lesser than Rs. 300
-    - lesser than Rs.300
-    - Lesserthan Rs. 300
-    - lesserthan Rs. 300
-    - lesserthan Rs.300
-    - Lesserthan Rs.300
-    - Less than Rs. 300
-    - Less than Rs.300
-    - less than Rs. 300
-    - less than Rs.300
-    - Lessthan Rs. 300
-    - lessthan Rs. 300
-    - lessthan Rs.300
-    - Lessthan Rs.300
-    - Lesser than 300
-    - lesser than 300
-    - Lesserthan 300
-    - lesserthan 300
-    - Less than 300
-    - lessthan 300
-    - Lessthan 300
 - synonym: medium
   examples: |
     - moderately
     - moderate
     - mid
+    - average
     - in range of 300 to 700
     - 300 to 700
     - 300-700
     - Rs. 300 to 700
     - Rs.300 to 700
-    - in range of 300 to 700 
-    - 300 to 700 
-    - 300-700 
-    - Rs. 300 to 700 
-    - Rs.300 to 700 
 - synonym: high
   examples: |
     - expensive
     - costly
     - More than 700
     - >700
-    - >700 
     - greater than 700
     - 700 or more
     - luxury

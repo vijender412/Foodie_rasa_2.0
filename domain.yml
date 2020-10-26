@@ -2,11 +2,11 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- email_confirmation
-- restaurant_search
 - greet
-- goodbye
+- restaurant_search
+- email_confirmation
 - affirm
+- goodbye
 - deny
 entities:
 - cuisine
@@ -16,19 +16,19 @@ entities:
 slots:
   cuisine:
     type: text
-    influence_conversation: false
+    influence_conversation: true
   email:
     type: text
-    influence_conversation: false
+    influence_conversation: true
   emailbody:
     type: text
-    influence_conversation: false
+    influence_conversation: true
   location:
     type: text
-    influence_conversation: false
+    influence_conversation: true
   price:
     type: text
-    influence_conversation: false
+    influence_conversation: true
 responses:
   utter_greet:
   - text: Hi there! How may I help you?
@@ -71,6 +71,10 @@ responses:
     text: What's the average budget for two people?
   utter_no_results_found:
   - text: Sorry, No results found for your criteria. Would you like to search for some other restaurants?
+  utter_budget_error:
+  - text: Sorry, I couldn't get you. Please choose one of the budget options from the above mentioned options.
+  utter_cuisine_error:
+  - text: Sorry, I couldn't get you. Please choose one of the cuisine options from the above mentioned options.
 actions:
 - action_chklocation
 - action_search_restaurants
