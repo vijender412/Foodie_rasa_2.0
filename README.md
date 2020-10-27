@@ -6,8 +6,14 @@ This repo contains a chatbot for Food ordering and using Zomato Api for searchin
 An Indian startup named 'Foodie Khana' wants to build a conversational bot (chatbot) which can help users discover restaurants across several Indian cities.
 The main purpose of the bot is to help users discover restaurants quickly and efficiently and to provide a good restaurant discovery experience.
 Currently the compant is having its business in Tier-1 and Tier-2 cities. 
-Tier-1:
-Tier-2:
+
+ 	
+| HRA classification        | City           |
+| ------------------------- |:--------------:|
+| Tier-1                         | Ahmedabad, Bengaluru, Chennai, Delhi, Hyderabad, Kolkata, Mumbai and Pune |
+| Tier-2                         | Agra, Ajmer, Aligarh, Amravati, Amritsar, Asansol, Aurangabad, Bareilly, Belgaum, Bhavnagar, Bhiwandi, Bhopal, Bhubaneswar, Bikaner, Bilaspur, Bokaro Steel City, Chandigarh, Coimbatore, Cuttack, Dehradun, Dhanbad, Bhilai, Durgapur, Dindigul, Erode, Faridabad, Firozabad, Ghaziabad, Gorakhpur, Gulbarga, Guntur, Gwalior, Gurgaon, Guwahati, Hamirpur, Hubli–Dharwad, Indore, Jabalpur, Jaipur, Jalandhar, Jammu, Jamnagar, Jamshedpur, Jhansi, Jodhpur, Kakinada, Kannur, Kanpur, Karnal, Kochi, Kolhapur, Kollam, Kozhikode, Kurnool, Ludhiana, Lucknow, Madurai, Malappuram, Mathura, Mangalore, Meerut, Moradabad, Mysore, Nagpur, Nanded, Nashik, Nellore, Noida, Patna, Pondicherry, Purulia, Prayagraj, Raipur, Rajkot, Rajahmundry, Ranchi, Rourkela, Salem, Sangli, Shimla, Siliguri, Solapur, Srinagar, Surat, Thanjavur, Thiruvananthapuram, Thrissur, Tiruchirappalli, Tirunelveli, Ujjain, Bijapur, Vadodara, Varanasi, Vasai-Virar City, Vijayawada, Visakhapatnam, Vellore and Warangal: |
+
+
 It will reply back with something like "We do not operate in that area yet" if your city is not amoung Tier-1 and Tier-2.
 
 The bot is able to identify common synonyms of city names, such as Bangalore/Bengaluru, Mumbai/Bombay, Allahabad/Prayagraj etc.
@@ -44,7 +50,7 @@ Actions Require a Zomato API creditials. Grab it from [here](https://developers.
 Tensorflow: 2.3.1
 Rasa Version     : 2.0.2
 Rasa SDK Version : 2.0.0
-Rasa X Version   : None (Doesnt allow in python 3.8 till date 27/10/2020 but if you want you can go with lower version of python and install rasa x) 
+Rasa X Version   : None
 Python Version   : 3.8.3
 Operating System : Windows-10-10.0.18362-SP0
 Python Path      : c:\programdata\miniconda3\python.exe
