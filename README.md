@@ -1,6 +1,6 @@
 # Foddie_Khana_rasa_2.0
 
-![Logo Image](https://github.com/vijender412/Foodie_rasa_2.0/edit/main/image.png)
+![Logo Image](image.png)
 
 Problem Statement:
 This repo contains a chatbot for Food ordering and using Zomato Api for searching best restaurant.
