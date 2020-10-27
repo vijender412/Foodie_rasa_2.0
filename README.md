@@ -38,9 +38,9 @@ Finally, the bot will ask the user whether he/she wants the details of the top 1
 Lets Go: YEEEEEEEEEEEEEEE
 Its recommended to create a virtual enviornment before start working.
 Use Requirements.txt to install dependencies for the project.
-Actions Require a Zomato API creditials. Grab it from [here]: https://developers.zomato.com/api
+Actions Require a Zomato API creditials. Grab it from [here](https://developers.zomato.com/api)
 
-Python: 3.8.3
+```Python: 3.8.3
 Tensorflow: 2.3.1
 Rasa Version     : 2.0.2
 Rasa SDK Version : 2.0.0
@@ -48,7 +48,7 @@ Rasa X Version   : None (Doesnt allow in python 3.8 till date 27/10/2020 but if 
 Python Version   : 3.8.3
 Operating System : Windows-10-10.0.18362-SP0
 Python Path      : c:\programdata\miniconda3\python.exe
-
+```
 Slack Integration:  Follow this [link](https://medium.com/analytics-vidhya/integrating-your-rasa-chat-bot-with-slack-c18bffc6018b)
 
 Thanks for reading. Let me know in case of issue.. 
