@@ -4,10 +4,7 @@
 
 This repo contains a chatbot for Food ordering and using Zomato Api for searching best restaurant.
 An Indian startup named 'Foodie Khana' wants to build a conversational bot (chatbot) which can help users discover restaurants across several Indian cities.
-
-Goal:
 The main purpose of the bot is to help users discover restaurants quickly and efficiently and to provide a good restaurant discovery experience.
-
 Currently the compant is having its business in Tier-1 and Tier-2 cities. 
 Tier-1:
 Tier-2:
@@ -27,15 +24,16 @@ And then it returns the results to the user, displaying the top 5 restaurants in
 
 Finally, the bot will ask the user whether he/she wants the details of the top 10 restaurants on email. If the user replies 'yes', the bot should ask for user’s email id and then send it over email. Else, just reply with a 'goodbye' message. 
 
->The mail will have the following details for each restaurant:
->Restaurant Name
->Restaurant locality address
->Average budget for two people
->Zomato user rating 
+```The mail will have the following details for each restaurant:
+Restaurant Name
+Restaurant locality address
+Average budget for two people
+Zomato user rating ```
 
 ![Screenshot Mail](mail_result.PNG)
 
 Lets Go: YEEEEEEEEEEEEEEE
+
 Its recommended to create a virtual enviornment before start working.
 Use Requirements.txt to install dependencies for the project.
 Actions Require a Zomato API creditials. Grab it from [here](https://developers.zomato.com/api)
