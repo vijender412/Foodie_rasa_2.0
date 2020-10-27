@@ -1,13 +1,5 @@
 # Foddie_Khana_rasa_2.0
 
-#███████╗ ██████╗  ██████╗ ██████╗ ██╗███████╗    ██╗  ██╗██╗  ██╗ █████╗ ███╗   ██╗ █████╗ 
-#██╔════╝██╔═══██╗██╔═══██╗██╔══██╗██║██╔════╝    ██║ ██╔╝██║  ██║██╔══██╗████╗  ██║██╔══██╗
-#█████╗  ██║   ██║██║   ██║██║  ██║██║█████╗      █████╔╝ ███████║███████║██╔██╗ ██║███████║
-#██╔══╝  ██║   ██║██║   ██║██║  ██║██║██╔══╝      ██╔═██╗ ██╔══██║██╔══██║██║╚██╗██║██╔══██║
-#██║     ╚██████╔╝╚██████╔╝██████╔╝██║███████╗    ██║  ██╗██║  ██║██║  ██║██║ ╚████║██║  ██║
-#╚═╝      ╚═════╝  ╚═════╝ ╚═════╝ ╚═╝╚══════╝    ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
-                                                                                           
-
 Problem Statement:
 This repo contains a chatbot for Food ordering and using Zomato Api for searching best restaurant.
 An Indian startup named 'Foodie' wants to build a conversational bot (chatbot) which can help users discover restaurants across several Indian cities.
