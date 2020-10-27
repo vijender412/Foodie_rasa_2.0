@@ -42,10 +42,6 @@ Zomato user rating
 
 Lets Go: YEEEEEEEEEEEEEEE
 
-Its recommended to create a virtual enviornment before start working.
-Use Requirements.txt to install dependencies for the project.
-Actions Require a Zomato API creditials. Grab it from [here](https://developers.zomato.com/api)
-
 ```Python: 3.8.3
 Tensorflow: 2.3.1
 Rasa Version     : 2.0.2
@@ -55,6 +51,10 @@ Python Version   : 3.8.3
 Operating System : Windows-10-10.0.18362-SP0
 Python Path      : c:\programdata\miniconda3\python.exe
 ```
+Its recommended to create a virtual enviornment before start working.
+Use Requirements.txt to install dependencies for the project.
+Actions Require a Zomato API creditials. Grab it from [here](https://developers.zomato.com/api) Once you get key you can paste it to actions.py file
+Mailing: Mailing requires a gmail or account to send and receive mails. Please create temporary mail and paste it into actions
 Slack Integration:  Follow this [link](https://medium.com/analytics-vidhya/integrating-your-rasa-chat-bot-with-slack-c18bffc6018b)
 
 Thanks for reading. Let me know in case of issue.. 
