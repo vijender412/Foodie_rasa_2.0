@@ -44,6 +44,8 @@ Finally, the bot will ask the user whether he/she wants the details of the top 1
 >Average budget for two people
 >Zomato user rating 
 
+![Screenshot Mail](mail_result.PNG)
+
 Its recommended to create a virtual enviornment before start working.
 Use Requirements.txt to install dependencies for the project.
 
