@@ -20,6 +20,7 @@ The bot will then ask for Average budget for two people.
 ![Screenshot Bot](Slack_integration_result2.PNG)
  
 And then it returns the results to the user, displaying the top 5 restaurants in a sorted order (descending) of the average Zomato user rating (on a scale of 1-5, 5 being the highest). 
+
 >The format is as: {restaurant_name} in {restaurant_address} has been rated {rating}.
 
 Finally, the bot will ask the user whether he/she wants the details of the top 10 restaurants on email. If the user replies 'yes', the bot should ask for user’s email id and then send it over email. Else, just reply with a 'goodbye' message. 
@@ -28,7 +29,8 @@ Finally, the bot will ask the user whether he/she wants the details of the top 1
 Restaurant Name
 Restaurant locality address
 Average budget for two people
-Zomato user rating ```
+Zomato user rating 
+```
 
 ![Screenshot Mail](mail_result.PNG)
 
