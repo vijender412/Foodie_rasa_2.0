@@ -1,7 +1,5 @@
 # Foddie_Khana_rasa_2.0
 
-![Logo Image](image.png)
-
 This repo contains a chatbot for Food ordering and using Zomato Api for searching best restaurant.
 An Indian startup named 'Foodie Khana' wants to build a conversational bot (chatbot) which can help users discover restaurants across several Indian cities.
 The main purpose of the bot is to help users discover restaurants quickly and efficiently and to provide a good restaurant discovery experience.
